@@ -15,6 +15,7 @@ L’objectif est d’encourager l’exploration de la nature tout en analysant l
 <li><a href="https://pudding.cool/2021/03/foundation-names/">The Naked Truth</a></li>
 <li><a href="https://www.huedata.ai/#!/">Hue Data</a></li>
   <li><a href="https://movies-palettes.adriencarpentier.com/">Movies Palettes</a></li>
+  <li><a href="https://pudding.cool/2024/09/courts/">Every Outdoor Basketball Court in the U.S.A.</a></li>
 </ul>
 <h3>Données</h3>
 <ul>
