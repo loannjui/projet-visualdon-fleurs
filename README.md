@@ -19,5 +19,5 @@ L’objectif est d’encourager l’exploration de la nature tout en analysant l
 <h3>Données</h3>
 <ul>
 <li><a href="https://www.infoflora.ch/fr/">Info Flora</a></li>
-  <li><a hreef="https://entrepot.recherche.data.gouv.fr/dataset.xhtml%3Bjsessionid%3De0c12d34ff0227753206ff44a48b?fileAccess=&fileSortField=size&fileTypeGroupFacet="Other"&persistentId=doi%3A10.15454%2FADCQHT&q=&version">FlorealData</li>
+  <li><a href='https://entrepot.recherche.data.gouv.fr/dataset.xhtml%3Bjsessionid%3De0c12d34ff0227753206ff44a48b?fileAccess=&fileSortField=size&fileTypeGroupFacet="Other"&persistentId=doi%3A10.15454%2FADCQHT&q=&version'>FlorealData</li>
 </ul>
