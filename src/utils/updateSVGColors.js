@@ -1,26 +1,31 @@
 import gsap from 'gsap'
 
-const BASE_COLOR = '#F5F2EC'
+const BASE_COLOR = '#fffbe8'
 
-// Persiste les assignations entre les appels : shapeId -> flower
-const shapeAssignments = {}
+// Assignations par couche : prefix -> { shapeId -> flower }
+const shapeAssignments = { montagne: {}, plaine: {}, ville: {} }
 
 function assignRandomGSAP(flowers, prefix, count, shapeToFlower) {
+  const assignments = shapeAssignments[prefix]
+
   // Garder les formes dont la fleur est toujours valide, libérer les autres
   const freeIndices = []
   for (let i = 1; i <= count; i++) {
     const id = `${prefix}-${i}`
-    const existing = shapeAssignments[id]
+    const existing = assignments[id]
     if (existing && flowers.includes(existing)) {
       shapeToFlower[id] = existing
     } else {
-      if (existing) delete shapeAssignments[id]
+      if (existing) {
+        delete assignments[id]
+        document.getElementById(id)?.classList.remove('shape--colored')
+      }
       freeIndices.push(i)
     }
   }
 
-  // Exclure les fleurs déjà utilisées et mélanger le reste
-  const usedFlowers = new Set(Object.values(shapeAssignments))
+  // Exclure les fleurs déjà utilisées dans cette couche seulement
+  const usedFlowers = new Set(Object.values(assignments))
   const available = flowers.filter(f => !usedFlowers.has(f)).sort(() => Math.random() - 0.5)
 
   freeIndices.forEach((i, idx) => {
@@ -39,8 +44,11 @@ function assignRandomGSAP(flowers, prefix, count, shapeToFlower) {
     })
 
     if (flower) {
-      shapeAssignments[id] = flower
+      assignments[id] = flower
       shapeToFlower[id] = flower
+      el.classList.add('shape--colored')
+    } else {
+      el.classList.remove('shape--colored')
     }
   })
 }

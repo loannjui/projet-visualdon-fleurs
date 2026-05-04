@@ -29,8 +29,11 @@ function ExplorerSection() {
   useEffect(() => { flowersRef.current = flowers }, [flowers])
 
   const displayedColors = useMemo(() =>
-    [...new Set(Object.values(shapeToFlower).map(f => f.couleur))].slice(0, 6)
+    [...new Set(Object.values(shapeToFlower).map(f => f.couleur))].slice(0, 12)
   , [shapeToFlower])
+
+  const swatchRows = Math.max(1, Math.ceil(displayedColors.length / 6))
+  const swatchMaxH = swatchRows * 52 + (swatchRows - 1) * 10 + 10 + 12
 
   useEffect(() => {
     const mapping = updateAllLayers(flowers)
@@ -127,14 +130,24 @@ function ExplorerSection() {
             <span className="panel-title">Couleurs dominantes</span>
             <ExportButton targetId="dominant-export-target" colors={displayedColors} />
           </div>
-          <div className="dominant-swatches" id="dominant-export-target">
-            {Array.from({ length: 6 }, (_, i) => (
+          <div
+            className="dominant-swatches"
+            id="dominant-export-target"
+            style={{ maxHeight: swatchMaxH }}
+          >
+            {displayedColors.map(color => (
               <div
-                key={i}
+                key={color}
                 className="dominant-swatch"
-                style={{
-                  backgroundColor: displayedColors[i] ?? 'transparent',
-                  opacity: displayedColors[i] ? 1 : 0,
+                style={{ backgroundColor: color, cursor: 'pointer' }}
+                onClick={() => {
+                  const seen = new Set()
+                  const flowers = Object.values(shapeToFlower).filter(f => {
+                    if (f.couleur !== color || seen.has(f.nom)) return false
+                    seen.add(f.nom)
+                    return true
+                  })
+                  setSelectedFlowers(flowers)
                 }}
               />
             ))}

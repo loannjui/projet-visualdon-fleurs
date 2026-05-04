@@ -127,12 +127,20 @@ h1, h2 { font-family: var(--font-display); font-weight: 700; }
   stroke-width: 4px !important;
 }
 
-/* Hover sur les formes SVG cliquables */
-[id^="montagne-"]:hover,
-[id^="plaine-"]:hover,
-[id^="ville-"]:hover {
-  filter: brightness(1.05);
+/* Remplissage de base pour toutes les formes numérotées (override fill:none des classes SVG) */
+.svg-layer [id^="montagne-"],
+.svg-layer [id^="plaine-"],
+.svg-layer [id^="ville-"] {
+  fill: #fffbe8;
+}
+
+/* Hover uniquement sur les formes colorées */
+.shape--colored {
   transition: filter 0.15s ease;
+}
+
+.shape--colored:hover {
+  filter: brightness(1.08);
 }
 
 /* ─── CONTROLS OVERLAY ────────────────────────────────────────── */
@@ -193,18 +201,31 @@ h1, h2 { font-family: var(--font-display); font-weight: 700; }
 
 .dominant-swatches {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+  width: calc(6 * 52px + 5 * 10px + 2 * 10px);
+  overflow: hidden;
+  padding: 10px 10px 12px;
+  transition: max-height 0.7s ease;
 }
 
 .dominant-swatch {
   width: 52px;
   height: 52px;
   border-radius: 50%;
+  flex-shrink: 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-  transition: background-color 0.5s ease, opacity 0.4s ease, transform 0.2s ease;
+  animation: swatchFadeIn 0.7s ease both;
+  transition: transform 0.2s ease;
 }
 
 .dominant-swatch:hover { transform: scale(1.08); }
+
+@keyframes swatchFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 
 /* ─── PANEL ALTITUDE (haut-droite, slider vertical) ──────────── */
 
@@ -477,20 +498,44 @@ input[type="range"]::-moz-range-thumb {
 
 /* ─── ONGLETS ─────────────────────────────────────────────────── */
 
+.modal-tabs-row {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1.5px solid #eee;
+  padding: 0 12px;
+  gap: 4px;
+}
+
+.modal-nav-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #bbb;
+  cursor: pointer;
+  padding: 0 8px;
+  line-height: 1;
+  transition: color 0.15s;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.modal-nav-btn:hover { color: #333; }
+
 .modal-tabs {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
+  flex: 1;
   gap: 0;
-  padding: 0 28px;
-  border-bottom: 1.5px solid #eee;
+  min-width: 0;
 }
 
 .modal-tab {
   background: none;
   border: none;
-  padding: 20px 16px 14px;
+  padding: 22px 14px 16px;
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: 1.9rem;
   font-weight: 700;
   color: #ccc;
   cursor: pointer;
@@ -507,9 +552,9 @@ input[type="range"]::-moz-range-thumb {
   content: '';
   position: absolute;
   bottom: -1.5px;
-  left: 16px;
-  right: 16px;
-  height: 2.5px;
+  left: 14px;
+  right: 14px;
+  height: 3px;
   background: var(--tab-color, #000);
   border-radius: 2px;
 }
@@ -533,6 +578,16 @@ input[type="range"]::-moz-range-thumb {
   object-fit: cover;
   border-radius: 10px;
   display: block;
+  flex-shrink: 0;
+}
+
+.modal-top-text { min-width: 0; }
+
+.modal-species {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 0 0 8px;
 }
 
 .modal-description {
@@ -542,38 +597,49 @@ input[type="range"]::-moz-range-thumb {
   margin: 0;
 }
 
-/* ─── LOCALISATION ────────────────────────────────────────────── */
+/* ─── SECTIONS ────────────────────────────────────────────────── */
 
-.modal-localisation {
+.modal-section {
   border-top: 1.5px solid #eee;
-  padding-top: 20px;
+  padding-top: 18px;
+  margin-bottom: 18px;
 }
 
-.modal-localisation-title {
+.modal-section-label {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin: 0 0 16px;
   color: var(--text-primary);
+  margin: 0 0 10px;
 }
 
-.modal-location-block {
-  margin-bottom: 12px;
+.modal-section-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0 0 4px;
 }
+
+.modal-floraison-str {
+  color: var(--text-secondary);
+  white-space: pre-line;
+  margin-top: 6px;
+}
+
+.modal-location-block { margin-bottom: 10px; }
 
 .modal-location-label {
   display: block;
   font-size: 0.88rem;
   font-weight: 700;
   margin-bottom: 2px;
-  color: var(--text-primary);
 }
 
-.modal-location-text {
-  font-size: 0.88rem;
-  line-height: 1.55;
-  color: var(--text-primary);
-  margin: 0;
+.modal-funfact {
+  background: #f9f7f2;
+  border-radius: 8px;
+  padding: 14px 16px;
+  border-top: none;
 }
 
 /* ─── FERMETURE ───────────────────────────────────────────────── */

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { MOIS_COURTS } from '../data/fleurs'
 
 function parseLocalisation(str) {
   if (!str) return []
@@ -24,25 +25,47 @@ function FlowerModal({ flowers, onClose }) {
 
   const flower = flowers[activeTab] ?? flowers[0]
   const locations = parseLocalisation(flower.localisation)
+  const total = flowers.length
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal-card" onClick={e => e.stopPropagation()}>
 
-        <div className="modal-tabs">
-          {flowers.map((f, i) => (
+        {/* Onglets + navigation */}
+        <div className="modal-tabs-row">
+          {total > 1 && (
             <button
-              key={f.nom}
-              className={`modal-tab${i === activeTab ? ' modal-tab--active' : ''}`}
-              style={i === activeTab ? { '--tab-color': f.couleur } : {}}
-              onClick={() => setActiveTab(i)}
-            >
-              {f.nom}
-            </button>
-          ))}
+              className="modal-nav-btn"
+              onClick={() => setActiveTab(i => (i - 1 + total) % total)}
+              aria-label="Précédent"
+            >‹</button>
+          )}
+
+          <div className="modal-tabs">
+            {flowers.map((f, i) => (
+              <button
+                key={f.nom}
+                className={`modal-tab${i === activeTab ? ' modal-tab--active' : ''}`}
+                style={i === activeTab ? { '--tab-color': f.couleur } : {}}
+                onClick={() => setActiveTab(i)}
+              >
+                {f.nom}
+              </button>
+            ))}
+          </div>
+
+          {total > 1 && (
+            <button
+              className="modal-nav-btn"
+              onClick={() => setActiveTab(i => (i + 1) % total)}
+              aria-label="Suivant"
+            >›</button>
+          )}
         </div>
 
         <div className="modal-body">
+
+          {/* Photo + description */}
           <div className="modal-top">
             {flower.image && (
               <img
@@ -52,18 +75,51 @@ function FlowerModal({ flowers, onClose }) {
                 onError={e => { e.target.style.display = 'none' }}
               />
             )}
-            <p className="modal-description">{flower.description}</p>
+            <div className="modal-top-text">
+              <p className="modal-species">{flower.species}</p>
+              <p className="modal-description">{flower.description}</p>
+            </div>
           </div>
 
+          {/* Floraison */}
+          {flower.mois_floraison?.length > 0 && (
+            <div className="modal-section">
+              <h3 className="modal-section-label">Floraison</h3>
+              <p className="modal-section-text">
+                {flower.mois_floraison.map(m => MOIS_COURTS[m]).join(' · ')}
+              </p>
+              {flower.floraison_str && (
+                <p className="modal-section-text modal-floraison-str">{flower.floraison_str}</p>
+              )}
+            </div>
+          )}
+
+          {/* Où le trouver */}
           {locations.length > 0 && (
-            <div className="modal-localisation">
-              <h3 className="modal-localisation-title">Où le trouver ?&nbsp; 🔭</h3>
+            <div className="modal-section">
+              <h3 className="modal-section-label">Où le trouver ? 🔭</h3>
               {locations.map((loc, i) => (
                 <div key={i} className="modal-location-block">
                   {loc.label && <strong className="modal-location-label">{loc.label}</strong>}
-                  <p className="modal-location-text">{loc.text}</p>
+                  <p className="modal-section-text">{loc.text}</p>
                 </div>
               ))}
+            </div>
+          )}
+
+          {/* Altitude */}
+          {flower.altitude && (
+            <div className="modal-section">
+              <h3 className="modal-section-label">Altitude</h3>
+              <p className="modal-section-text">{flower.altitude.min} m – {flower.altitude.max} m</p>
+            </div>
+          )}
+
+          {/* Fun fact */}
+          {flower.fun_fact && (
+            <div className="modal-section modal-funfact">
+              <h3 className="modal-section-label">Le saviez-vous ?</h3>
+              <p className="modal-section-text">{flower.fun_fact}</p>
             </div>
           )}
         </div>
