@@ -110,6 +110,33 @@ function ExplorerSection() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const seekToAltitude = (targetAlt) => {
+    const mont   = montRef.current
+    const plaine = plaineRef.current
+    const ville  = villeRef.current
+    if (!mont || !plaine || !ville) return
+
+    const scrollTop = window.scrollY
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight
+    const montTop   = mont.getBoundingClientRect().top   + scrollTop
+    const plaineTop = plaine.getBoundingClientRect().top + scrollTop
+    const villeTop  = ville.getBoundingClientRect().top  + scrollTop
+
+    let target
+    if (targetAlt >= 1500) {
+      const p = (3786 - targetAlt) / (3786 - 1500)
+      target = montTop + p * (plaineTop - montTop)
+    } else if (targetAlt >= 600) {
+      const p = (1500 - targetAlt) / (1500 - 600)
+      target = plaineTop + p * (villeTop - plaineTop)
+    } else {
+      const p = (600 - targetAlt) / (600 - 300)
+      const remaining = Math.max(1, maxScroll - villeTop)
+      target = villeTop + p * remaining
+    }
+
+    window.lenis?.scrollTo(Math.round(target))
+  }
 
   return (
     <section className="explorer-section">
@@ -139,7 +166,7 @@ function ExplorerSection() {
           </div>
         </div>
 
-        <AltitudeSlider value={altitude} />
+        <AltitudeSlider value={altitude} onChange={seekToAltitude} />
         <MonthSlider value={month} onChange={setMonth} />
       </div>
 
