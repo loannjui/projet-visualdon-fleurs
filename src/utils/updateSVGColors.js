@@ -2,18 +2,20 @@ import gsap from 'gsap'
 
 const BASE_COLOR = '#fffbe8'
 
-// Assignations par couche : prefix -> { shapeId -> flower }
+// Persistent assignments per layer: prefix -> { shapeId -> flower }
 const shapeAssignments = { montagne: {}, plaine: {}, ville: {} }
 
 function assignRandomGSAP(flowers, prefix, count, shapeToFlower) {
   const assignments = shapeAssignments[prefix]
-
-  // Garder les formes dont la fleur est toujours valide, libérer les autres
   const freeIndices = []
+  const keptColors = new Set()
+
+  // Keep valid shapes whose color hasn't been claimed yet; free everything else
   for (let i = 1; i <= count; i++) {
     const id = `${prefix}-${i}`
     const existing = assignments[id]
-    if (existing && flowers.includes(existing)) {
+    if (existing && flowers.includes(existing) && !keptColors.has(existing.couleur)) {
+      keptColors.add(existing.couleur)
       shapeToFlower[id] = existing
     } else {
       if (existing) {
@@ -24,9 +26,15 @@ function assignRandomGSAP(flowers, prefix, count, shapeToFlower) {
     }
   }
 
-  // Exclure les fleurs déjà utilisées dans cette couche seulement
-  const usedFlowers = new Set(Object.values(assignments))
-  const available = flowers.filter(f => !usedFlowers.has(f)).sort(() => Math.random() - 0.5)
+  // One flower per unique color, excluding colors already held by kept shapes
+  const seenColors = new Set(keptColors)
+  const available = []
+  for (const f of flowers.slice().sort(() => Math.random() - 0.5)) {
+    if (!seenColors.has(f.couleur)) {
+      seenColors.add(f.couleur)
+      available.push(f)
+    }
+  }
 
   freeIndices.forEach((i, idx) => {
     const id = `${prefix}-${i}`
@@ -36,12 +44,8 @@ function assignRandomGSAP(flowers, prefix, count, shapeToFlower) {
     const flower = available[idx] ?? null
     const fillColor = flower ? flower.couleur : BASE_COLOR
 
-    gsap.to(el, {
-      fill: fillColor,
-      duration: 0.8,
-      delay: idx * 0.04,
-      ease: 'power2.inOut',
-    })
+    // No stagger delay — avoids the window where a shape is clickable but still shows BASE_COLOR
+    gsap.to(el, { fill: fillColor, duration: 0.8, ease: 'power2.inOut' })
 
     if (flower) {
       assignments[id] = flower

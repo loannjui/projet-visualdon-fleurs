@@ -1,6 +1,4 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useFlowerFilter } from '../hooks/useFlowerFilter'
 import { updateAllLayers } from '../utils/updateSVGColors'
 import MonthSlider from './MonthSlider.jsx'
@@ -10,8 +8,6 @@ import FlowerModal from './FlowerModal.jsx'
 import MontagneIllustration from '../illustrations/montagne.svg?react'
 import PlaineIllustration from '../illustrations/plaine.svg?react'
 import VilleIllustration from '../illustrations/ville.svg?react'
-
-gsap.registerPlugin(ScrollTrigger)
 
 function ExplorerSection() {
   const [altitude, setAltitude] = useState(3786)
@@ -28,17 +24,35 @@ function ExplorerSection() {
 
   useEffect(() => { flowersRef.current = flowers }, [flowers])
 
-  const displayedColors = useMemo(() =>
-    [...new Set(Object.values(shapeToFlower).map(f => f.couleur))].slice(0, 12)
-  , [shapeToFlower])
-
-  const swatchRows = Math.max(1, Math.ceil(displayedColors.length / 6))
-  const swatchMaxH = swatchRows * 52 + (swatchRows - 1) * 10 + 10 + 12
+  const prevFlowerKeyRef = useRef('')
 
   useEffect(() => {
+    const key = flowers.map(f => f.nom).join(',')
+    if (key === prevFlowerKeyRef.current) return
+    prevFlowerKeyRef.current = key
     const mapping = updateAllLayers(flowers)
     setShapeToFlower(mapping)
   }, [flowers])
+
+  // Slide a 12-color window through flowers sorted by center altitude as altitude changes.
+  // This ensures the palette changes continuously even when the flower set is constant
+  // (which happens below ~1000m where all 200 flowers bloom).
+  const swatchAltitude = Math.round(altitude / 50) * 50
+  const displayedColors = useMemo(() => {
+    const seen = new Set()
+    const byCenter = []
+    for (const f of [...flowers].sort((a, b) =>
+      (a.altitude.min + a.altitude.max) - (b.altitude.min + b.altitude.max)
+    )) {
+      if (!seen.has(f.couleur)) { seen.add(f.couleur); byCenter.push(f.couleur) }
+    }
+    const t = (swatchAltitude - 300) / (3786 - 300)
+    const startIdx = Math.floor(t * Math.max(0, byCenter.length - 12))
+    return byCenter.slice(startIdx, startIdx + 12).sort()
+  }, [flowers, swatchAltitude])
+
+  const swatchRows = Math.max(1, Math.ceil(displayedColors.length / 6))
+  const swatchMaxH = swatchRows * 52 + (swatchRows - 1) * 10 + 10 + 12
 
   useEffect(() => {
     const cleanup = []
@@ -96,29 +110,6 @@ function ExplorerSection() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Léger parallaxe sur chaque couche — le SVG glisse légèrement plus lentement que le scroll
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      [montRef, plaineRef, villeRef].forEach(ref => {
-        const svg = ref.current?.querySelector('svg')
-        if (!svg) return
-        gsap.fromTo(svg,
-          { y: '0%' },
-          {
-            y: '-8%',
-            ease: 'none',
-            scrollTrigger: {
-              trigger: ref.current,
-              start: 'top bottom',
-              end: 'bottom top',
-              scrub: true,
-            },
-          }
-        )
-      })
-    })
-    return () => ctx.revert()
-  }, [])
 
   return (
     <section className="explorer-section">
@@ -141,13 +132,7 @@ function ExplorerSection() {
                 className="dominant-swatch"
                 style={{ backgroundColor: color, cursor: 'pointer' }}
                 onClick={() => {
-                  const seen = new Set()
-                  const flowers = Object.values(shapeToFlower).filter(f => {
-                    if (f.couleur !== color || seen.has(f.nom)) return false
-                    seen.add(f.nom)
-                    return true
-                  })
-                  setSelectedFlowers(flowers)
+                  setSelectedFlowers(flowersRef.current.filter(f => f.couleur === color))
                 }}
               />
             ))}
@@ -159,14 +144,20 @@ function ExplorerSection() {
       </div>
 
       {/* Les 3 SVGs empilés — scroll naturel à travers chacun */}
-      <div className="layer-wrap" ref={montRef}>
-        <MontagneIllustration className="svg-layer" />
+      <div className="layer-wrap layer-montagne" ref={montRef}>
+        <div className="svg-sticky">
+          <MontagneIllustration className="svg-layer" />
+        </div>
       </div>
-      <div className="layer-wrap" ref={plaineRef}>
-        <PlaineIllustration className="svg-layer" />
+      <div className="layer-wrap layer-plaine" ref={plaineRef}>
+        <div className="svg-sticky">
+          <PlaineIllustration className="svg-layer" />
+        </div>
       </div>
-      <div className="layer-wrap" ref={villeRef}>
-        <VilleIllustration className="svg-layer" />
+      <div className="layer-wrap layer-ville" ref={villeRef}>
+        <div className="svg-sticky">
+          <VilleIllustration className="svg-layer" />
+        </div>
       </div>
 
       <FlowerModal flowers={selectedFlowers} onClose={() => setSelectedFlowers([])} />

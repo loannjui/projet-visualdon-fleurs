@@ -98,23 +98,21 @@ h1, h2 { font-family: var(--font-display); font-weight: 700; }
 /* ─── EXPLORER ────────────────────────────────────────────────── */
 
 .explorer-section {
-  height: auto;
   background: var(--bg-explorer);
   animation: pageIn 0.5s ease both;
 }
 
 .layer-wrap {
-  width: 100%;
   position: relative;
-  overflow: hidden;
+  width: 100%;
 }
 
-.layer-wrap + .layer-wrap {
-  margin-top: -15vh;
-}
+.layer-montagne { z-index: 1; margin-top: -5vh;}
+.layer-plaine   { z-index: 2; margin-top: -27vh; }
+.layer-ville    { z-index: 3; margin-top: -15vh; }
 
-.layer-wrap + .layer-wrap + .layer-wrap {
-  margin-top: -30vh;
+.svg-sticky {
+  width: 100%;
 }
 
 .svg-layer {
@@ -127,11 +125,12 @@ h1, h2 { font-family: var(--font-display); font-weight: 700; }
   stroke-width: 4px !important;
 }
 
-/* Remplissage de base pour toutes les formes numérotées (override fill:none des classes SVG) */
+/* Remplissage de base pour toutes les formes numérotées (override fill:none et opacity des classes SVG inlinées) */
 .svg-layer [id^="montagne-"],
 .svg-layer [id^="plaine-"],
 .svg-layer [id^="ville-"] {
   fill: #fffbe8;
+  opacity: 1;
 }
 
 /* Hover uniquement sur les formes colorées */
@@ -140,7 +139,7 @@ h1, h2 { font-family: var(--font-display); font-weight: 700; }
 }
 
 .shape--colored:hover {
-  filter: brightness(1.08);
+  filter: brightness(.9);
 }
 
 /* ─── CONTROLS OVERLAY ────────────────────────────────────────── */
