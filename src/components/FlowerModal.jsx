@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { MOIS_COURTS } from '../data/fleurs'
 
 function parseLocalisation(str) {
@@ -12,8 +12,14 @@ function parseLocalisation(str) {
 
 function FlowerModal({ flowers, onClose }) {
   const [activeTab, setActiveTab] = useState(0)
+  const activeTabRef = useRef(null)
+  const tabsRef = useRef(null)
 
   useEffect(() => { setActiveTab(0) }, [flowers])
+
+  useEffect(() => {
+    activeTabRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+  }, [activeTab])
 
   useEffect(() => {
     const handleKey = (e) => { if (e.key === 'Escape') onClose() }
@@ -41,12 +47,13 @@ function FlowerModal({ flowers, onClose }) {
             >‹</button>
           )}
 
-          <div className="modal-tabs">
+          <div className="modal-tabs" ref={tabsRef}>
             {flowers.map((f, i) => (
               <button
                 key={f.nom}
+                ref={i === activeTab ? activeTabRef : null}
                 className={`modal-tab${i === activeTab ? ' modal-tab--active' : ''}`}
-                style={i === activeTab ? { '--tab-color': f.couleur } : {}}
+                style={{ '--tab-color': f.couleur }}
                 onClick={() => setActiveTab(i)}
               >
                 {f.nom}

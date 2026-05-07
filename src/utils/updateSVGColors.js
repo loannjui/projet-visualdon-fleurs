@@ -1,8 +1,6 @@
 import gsap from 'gsap'
 
-const BASE_COLOR   = '#fffbe8'
-const STAGGER_STEP = 0.06  // secondes par position
-const WINDOW       = 4     // demi-fenêtre → range totale de 8
+const BASE_COLOR = '#fffbe8'
 
 // Persistent assignments per layer: prefix -> { shapeId -> flower }
 const shapeAssignments = { montagne: {}, plaine: {}, ville: {} }
@@ -22,7 +20,11 @@ function assignRandomGSAP(flowers, prefix, count, shapeToFlower) {
     } else {
       if (existing) {
         delete assignments[id]
-        document.getElementById(id)?.classList.remove('shape--colored')
+        const el = document.getElementById(id)
+        if (el) {
+          gsap.killTweensOf(el)
+          el.classList.remove('shape--colored')
+        }
       }
       freeIndices.push(i)
     }
@@ -46,10 +48,7 @@ function assignRandomGSAP(flowers, prefix, count, shapeToFlower) {
     const flower = available[idx] ?? null
     const fillColor = flower ? flower.couleur : BASE_COLOR
 
-    const lo = Math.max(0, idx - WINDOW) * STAGGER_STEP
-    const hi = (idx + WINDOW) * STAGGER_STEP
-    const delay = lo + Math.random() * (hi - lo)
-    gsap.to(el, { fill: fillColor, duration: 0.8, ease: 'power2.inOut', delay })
+    gsap.to(el, { fill: fillColor, duration: 0.8, ease: 'power2.inOut' })
 
     if (flower) {
       assignments[id] = flower

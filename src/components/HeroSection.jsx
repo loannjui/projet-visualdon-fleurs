@@ -1,11 +1,30 @@
+import { useState } from 'react'
 import ColorGrid from './ColorGrid.jsx'
 
 function HeroSection({ onCTAClick }) {
+  const [mode, setMode] = useState('random')
+  const [fading, setFading] = useState(false)
+
+  const handleToggle = () => {
+    setFading(true)
+    setTimeout(() => {
+      setMode(m => m === 'data' ? 'random' : 'data')
+      setFading(false)
+    }, 300)
+  }
+
   return (
     <section className="hero-section">
-      <ColorGrid />
+      <ColorGrid key={mode} mode={mode} fading={fading} />
+      <button
+        className="grid-mode-toggle"
+        onClick={handleToggle}
+      >
+        {mode === 'data' ? 'Mode aléatoire' : 'Par altitude & mois'}
+      </button>
       <div className="hero-cta">
-        <h1>Le nuancier des<br />fleurs suisses.</h1>
+        <h1>Le nuancier des fleurs<br />suisses.</h1>
+        <p>La Suisse abrite plus de 3'000 espèces de plantes à fleurs, chacune avec sa couleur propre façonnée par son altitude et sa saison. Des prairies de plaine aux éboulis d'altitude, du premier crocus printanier aux dernières gentianes d'automne, la palette change à chaque mètre et à chaque semaine.</p>
         <button onClick={onCTAClick}>Commencer à explorer</button>
       </div>
     </section>
