@@ -9,7 +9,7 @@ function App() {
     <main>
       {view === 'hero'
         ? <HeroSection key="hero" onCTAClick={() => setView('explorer')} />
-        : <ExplorerSection key="explorer" />
+        : <ExplorerSection key="explorer" onHome={() => setView('hero')} />
       }
     </main>
   )

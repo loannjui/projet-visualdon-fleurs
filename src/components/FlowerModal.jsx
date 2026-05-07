@@ -14,6 +14,7 @@ function FlowerModal({ flowers, onClose }) {
   const [activeTab, setActiveTab] = useState(0)
   const activeTabRef = useRef(null)
   const tabsRef = useRef(null)
+  const cardRef = useRef(null)
 
   useEffect(() => { setActiveTab(0) }, [flowers])
 
@@ -27,6 +28,33 @@ function FlowerModal({ flowers, onClose }) {
     return () => document.removeEventListener('keydown', handleKey)
   }, [onClose])
 
+  const isOpen = !!flowers && flowers.length > 0
+
+  useEffect(() => {
+    if (!isOpen) return
+    const card = cardRef.current
+    if (!card) return
+
+    // Capture phase on window: block wheel events outside the modal card
+    // (prevents both Lenis and native background scroll).
+    const blockBackground = (e) => {
+      if (!card.contains(e.target)) {
+        e.preventDefault()
+        e.stopPropagation()
+      }
+    }
+    // Bubble phase on card: stop events from reaching Lenis's window listener.
+    // No preventDefault → browser scrolls the card natively at full speed.
+    const stopBubble = (e) => e.stopPropagation()
+
+    window.addEventListener('wheel', blockBackground, { capture: true, passive: false })
+    card.addEventListener('wheel', stopBubble)
+    return () => {
+      window.removeEventListener('wheel', blockBackground, { capture: true })
+      card.removeEventListener('wheel', stopBubble)
+    }
+  }, [isOpen])
+
   if (!flowers || flowers.length === 0) return null
 
   const flower = flowers[activeTab] ?? flowers[0]
@@ -35,7 +63,7 @@ function FlowerModal({ flowers, onClose }) {
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
-      <div className="modal-card" onClick={e => e.stopPropagation()}>
+      <div className="modal-card" ref={cardRef} onClick={e => e.stopPropagation()}>
 
         {/* Onglets + navigation */}
         <div className="modal-tabs-row">

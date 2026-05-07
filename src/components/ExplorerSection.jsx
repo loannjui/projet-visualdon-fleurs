@@ -9,7 +9,7 @@ import MontagneIllustration from '../illustrations/montagne.svg?react'
 import PlaineIllustration from '../illustrations/plaine.svg?react'
 import VilleIllustration from '../illustrations/ville.svg?react'
 
-function ExplorerSection() {
+function ExplorerSection({ onHome }) {
   const [altitude, setAltitude] = useState(3786)
   const [month, setMonth] = useState(6)
   const [selectedFlowers, setSelectedFlowers] = useState([])
@@ -18,21 +18,24 @@ function ExplorerSection() {
   const montRef    = useRef(null)
   const plaineRef  = useRef(null)
   const villeRef   = useRef(null)
-  const flowersRef = useRef([])
+  const flowersRef  = useRef([])
+  const altitudeRef = useRef(altitude)
 
   const { flowers } = useFlowerFilter(altitude, month)
 
-  useEffect(() => { flowersRef.current = flowers }, [flowers])
+  useEffect(() => { flowersRef.current  = flowers  }, [flowers])
+  useEffect(() => { altitudeRef.current = altitude }, [altitude])
 
   const prevFlowerKeyRef = useRef('')
 
   useEffect(() => {
-    const key = flowers.map(f => f.nom).join(',')
+    const zone = altitude > 2200 ? 'mont' : altitude > 850 ? 'plaine' : 'ville'
+    const key = zone + '|' + flowers.map(f => f.nom).join(',')
     if (key === prevFlowerKeyRef.current) return
     prevFlowerKeyRef.current = key
-    const mapping = updateAllLayers(flowers)
+    const mapping = updateAllLayers(flowers, altitudeRef.current)
     setShapeToFlower(mapping)
-  }, [flowers])
+  }, [flowers, altitude])
 
   // Slide a 12-color window through flowers sorted by center altitude as altitude changes.
   // This ensures the palette changes continuously even when the flower set is constant
@@ -186,6 +189,10 @@ function ExplorerSection() {
           <VilleIllustration className="svg-layer" />
         </div>
       </div>
+
+      <button className="home-btn" onClick={onHome} aria-label="Retour à l'accueil">
+        ← Accueil
+      </button>
 
       <FlowerModal flowers={selectedFlowers} onClose={() => setSelectedFlowers([])} />
     </section>

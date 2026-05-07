@@ -18,8 +18,7 @@ function topColors(flowers, n = 2) {
 
 function ColorGrid({ mode, fading }) {
   const SQUARE_SIZE = 44
-
-  const squares = useMemo(() => {
+ const squares = useMemo(() => {
     const cols = Math.ceil(window.innerWidth / SQUARE_SIZE) + 1
     const rows = Math.ceil(window.innerHeight / SQUARE_SIZE) + 1
     const total = cols * rows

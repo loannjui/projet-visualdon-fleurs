@@ -159,6 +159,32 @@ h2 {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
+.home-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  background: #fff;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.home-btn:hover {
+  background: var(--text-primary);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
 /* ─── EXPLORER ────────────────────────────────────────────────── */
 
 .explorer-section {
@@ -173,11 +199,11 @@ h2 {
 
 .layer-montagne {
   z-index: 1;
-  margin-top: -5vh;
+  margin-top: 0vh;
 }
 .layer-plaine {
   z-index: 2;
-  margin-top: -27vh;
+  margin-top: -22vh;
 }
 .layer-ville {
   z-index: 3;
