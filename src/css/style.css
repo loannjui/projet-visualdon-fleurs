@@ -50,7 +50,7 @@ h2 {
   position: absolute;
   inset: 0;
   display: grid;
-  grid-template-columns: repeat(var(--cols), 44px);
+  grid-template-columns: repeat(var(--cols), calc(100vw / 36));
   overflow: hidden;
   transition: opacity 0.3s ease;
 }
@@ -60,26 +60,18 @@ h2 {
 }
 
 .color-square {
-  width: 44px;
-  height: 44px;
+  width: calc(100vw / 36);
+  height: calc(100vw / 36);
   opacity: 0;
-  animation: squareReveal 0.3s ease forwards;
-}
-
-.color-square:hover {
-  transform: scale(1.12);
-  z-index: 2;
-  transition: transform 0.15s ease;
+  animation: squareReveal 0.5s ease-in-out forwards;
 }
 
 @keyframes squareReveal {
   from {
     opacity: 0;
-    transform: scale(0.8);
   }
   to {
     opacity: 1;
-    transform: scale(1);
   }
 }
 
@@ -94,6 +86,7 @@ h2 {
   border-radius: 10px;
   z-index: 10;
   width: clamp(300px, 54.6vw, 1048px);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
 }
 
 .hero-cta h1 {
@@ -133,11 +126,39 @@ h2 {
   color: #fff;
 }
 
-.grid-mode-toggle {
+.hero-cta button + button {
+  margin-left: 1rem;
+}
+
+.hero-cta {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-cta--data {
+  background: var(--bg-panel);
+  color: var(--text-primary);
+}
+
+.hero-cta--data p {
+  color: var(--text-secondary);
+}
+
+.hero-cta--data button {
+  background: var(--bg-hero);
+  color: #fff;
+  border-color: var(--bg-hero);
+}
+
+.hero-cta--data button:hover {
+  background: #fff;
+  color: var(--bg-hero);
+}
+
+.grid-mode-toggle, .home-btn {
   position: absolute;
   top: 28px;
   right: 28px;
-  z-index: 10;
+  z-index: 9999;
   background: var(--bg-hero);
   color: #fff;
   border: 1px solid var(--bg-hero);
@@ -154,36 +175,16 @@ h2 {
     border-color 0.2s;
 }
 
-.grid-mode-toggle:hover {
+.home-btn {
+  top: auto;
+  bottom: 73px;
+  right: 28px;
+}
+
+.grid-mode-toggle:hover, .home-btn:hover, .library-button:hover {
   background: var(--bg-panel);
   color: var(--bg-hero);
   border-color: var(--bg-panel);
-}
-
-.home-btn {
-  position: absolute;
-  bottom: 4.5rem;
-  right: 1.5rem;
-  z-index: 100;
-  background: #fff;
-  color: var(--text-primary);
-  border: 1px solid var(--border);
-  padding: 0.55rem 1.1rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-family: var(--font-display);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  cursor: pointer;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-}
-
-.home-btn:hover {
-  background: var(--text-primary);
-  color: #fff;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* ─── EXPLORER ────────────────────────────────────────────────── */
@@ -737,7 +738,7 @@ input[type="range"]::-moz-range-thumb {
 
 .modal-section-label {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-primary);
   margin: 0 0 10px;
@@ -806,8 +807,8 @@ input[type="range"]::-moz-range-thumb {
   padding: 0.55rem 1.1rem;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
-  bottom: 1.25rem;
-  right: 1.5rem;
+  bottom: 28px;
+  right: 28px;
   z-index: 200;
   margin: 0;
   font-family: var(--font-body);
@@ -848,4 +849,79 @@ input[type="range"]::-moz-range-thumb {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* ─── LIBRAIRIE DE FLEURS ───────────────────────────────────────────────── */
+
+.library-modal {
+  width: min(1100px, 92vw);
+  max-height: 88vh;
+  background: var(--bg-panel);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.25s ease;
+}
+
+.library-header {
+  padding: 20px 28px 16px;
+  border-bottom: 1.5px solid var(--border);
+  flex-shrink: 0;
+}
+
+.library-content {
+  overflow-y: auto;
+  padding: 24px 28px 28px;
+  flex: 1;
+}
+
+.library-color-section {
+  margin-bottom: 36px;
+}
+
+.library-color-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.library-card {
+  background: #f9f7f2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.library-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.library-card-body {
+  padding: 1rem;
+}
+
+.library-card-name {
+  margin: 0 0 2px;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.library-card-species {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-style: italic;
 }

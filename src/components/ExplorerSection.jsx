@@ -172,6 +172,7 @@ function ExplorerSection({ onHome }) {
 
         <AltitudeSlider value={altitude} onChange={seekToAltitude} />
         <MonthSlider value={month} onChange={setMonth} />
+
       </div>
 
       {/* Les 3 SVGs empilés — scroll naturel à travers chacun */}

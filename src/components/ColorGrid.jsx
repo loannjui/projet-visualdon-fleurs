@@ -3,6 +3,7 @@ import fleursData from '../data/fleurs'
 
 const ALT_MIN = 0
 const ALT_MAX = 3500
+const COLS = 36 // 3 squares per month × 12 months
 
 function topColors(flowers, n = 2) {
   if (flowers.length === 0) return ['#1a1a1a']
@@ -17,10 +18,10 @@ function topColors(flowers, n = 2) {
 }
 
 function ColorGrid({ mode, fading }) {
-  const SQUARE_SIZE = 44
- const squares = useMemo(() => {
-    const cols = Math.ceil(window.innerWidth / SQUARE_SIZE) + 1
-    const rows = Math.ceil(window.innerHeight / SQUARE_SIZE) + 1
+  const squares = useMemo(() => {
+    const cols = COLS
+    const squarePx = window.innerWidth / COLS
+    const rows = Math.ceil(window.innerHeight / squarePx) + 1
     const total = cols * rows
 
     if (mode === 'random') {
