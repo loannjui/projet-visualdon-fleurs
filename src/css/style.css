@@ -233,6 +233,11 @@ h2 {
   opacity: 1;
 }
 
+/* Les chemins décoratifs (sans id) ne doivent pas intercepter les clics */
+.svg-layer path:not([id]) {
+  pointer-events: none;
+}
+
 /* Hover uniquement sur les formes colorées */
 .shape--colored {
   transition: filter 0.15s ease;

@@ -6,7 +6,7 @@ import './css/style.css'
 import App from './App.jsx'
 
 window.lenis = new Lenis({
-  duration: 4,
+  duration: 6,
   easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
 })
 

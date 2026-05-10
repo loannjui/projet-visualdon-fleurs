@@ -11,7 +11,7 @@ import VilleIllustration from '../illustrations/ville.svg?react'
 
 function ExplorerSection({ onHome }) {
   const [altitude, setAltitude] = useState(3786)
-  const [month, setMonth] = useState(6)
+  const [month, setMonth] = useState(new Date().getMonth() + 1)
   const [selectedFlowers, setSelectedFlowers] = useState([])
   const [shapeToFlower, setShapeToFlower] = useState({})
 
