@@ -157,16 +157,19 @@ function ExplorerSection({ onHome }) {
             id="dominant-export-target"
             style={{ maxHeight: swatchMaxH }}
           >
-            {displayedColors.map(color => (
-              <div
-                key={color}
-                className="dominant-swatch"
-                style={{ backgroundColor: color, cursor: 'pointer' }}
-                onClick={() => {
-                  setSelectedFlowers(flowersRef.current.filter(f => f.couleur === color))
-                }}
-              />
-            ))}
+            {displayedColors.length === 0
+              ? <p className="swatches-empty">Aucune floraison ce mois-ci à cette altitude.</p>
+              : displayedColors.map(color => (
+                <div
+                  key={color}
+                  className="dominant-swatch"
+                  style={{ backgroundColor: color, cursor: 'pointer' }}
+                  onClick={() => {
+                    setSelectedFlowers(flowersRef.current.filter(f => f.couleur === color))
+                  }}
+                />
+              ))
+            }
           </div>
         </div>
 
