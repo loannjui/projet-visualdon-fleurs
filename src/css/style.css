@@ -128,6 +128,14 @@ h2 {
 
 .hero-cta button + button {
   margin-left: 1rem;
+  background: transparent;
+  color: var(--bg-panel);
+  border-color: var(--bg-panel);
+}
+
+.hero-cta button + button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
 }
 
 .hero-cta {
@@ -152,6 +160,17 @@ h2 {
 .hero-cta--data button:hover {
   background: #fff;
   color: var(--bg-hero);
+}
+
+.hero-cta--data button + button {
+  background: transparent;
+  color: var(--bg-hero);
+  border-color: var(--bg-hero);
+}
+
+.hero-cta--data button + button:hover {
+  background: var(--bg-hero);
+  color: #fff;
 }
 
 .grid-mode-toggle, .home-btn {
