@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { MOIS_COURTS } from '../data/fleurs'
+import { thumbUrl } from '../utils/imageUrl'
 
 function parseLocalisation(str) {
   if (!str) return []
@@ -103,9 +104,11 @@ function FlowerModal({ flowers, onClose }) {
           <div className="modal-top">
             {flower.image && (
               <img
-                src={flower.image}
+                src={thumbUrl(flower.image, 600)}
                 alt={flower.nom}
                 className="modal-image"
+                loading="lazy"
+                decoding="async"
                 onError={e => { e.target.style.display = 'none' }}
               />
             )}

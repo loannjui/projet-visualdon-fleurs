@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import fleurs from '../data/fleurs.js'
+import { thumbUrl } from '../utils/imageUrl'
 
 function FlowerLibraryModal({ isOpen, onClose }) {
   const modalRef = useRef(null)
@@ -56,8 +57,10 @@ function FlowerLibraryModal({ isOpen, onClose }) {
                 {groupe.map((fleur) => (
                   <article key={fleur.nom} className="library-card">
                     <img
-                      src={fleur.image}
+                      src={thumbUrl(fleur.image, 300)}
                       alt={fleur.nom}
+                      loading="lazy"
+                      decoding="async"
                       onError={e => { e.target.style.display = 'none' }}
                     />
                     <div className="library-card-body">

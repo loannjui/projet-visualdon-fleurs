@@ -99,7 +99,7 @@ function ExplorerSection({ onHome }) {
         // ville zone → 600 down to 300 (ends at 300 when fully scrolled)
         const remaining = Math.max(1, maxScroll - villeTop)
         const p = (scrollTop - villeTop) / remaining
-        newAlt = 600 - Math.min(1, p) * (600 - 300)
+        newAlt = 600 - Math.min(1, p) * (600 - 299)
       }
 
       setAltitude(Math.min(3786, Math.max(300, Math.round(newAlt))))
@@ -130,7 +130,7 @@ function ExplorerSection({ onHome }) {
       const p = (1500 - targetAlt) / (1500 - 600)
       target = plaineTop + p * (villeTop - plaineTop)
     } else {
-      const p = (600 - targetAlt) / (600 - 300)
+      const p = (600 - targetAlt) / (600 - 299)
       const remaining = Math.max(1, maxScroll - villeTop)
       target = villeTop + p * remaining
     }

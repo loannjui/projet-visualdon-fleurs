@@ -139,7 +139,7 @@ h2 {
 }
 
 .hero-cta {
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .hero-cta--data {
