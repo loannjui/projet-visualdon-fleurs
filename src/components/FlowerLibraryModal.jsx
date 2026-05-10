@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { createPortal } from 'react-dom'
 import fleurs from '../data/fleurs.js'
 
 function FlowerLibraryModal({ isOpen, onClose }) {
@@ -36,7 +37,7 @@ function FlowerLibraryModal({ isOpen, onClose }) {
     return acc
   }, {})
 
-  return (
+  return createPortal(
     <div className="modal-backdrop" onClick={onClose}>
       <div className="library-modal" ref={modalRef} onClick={e => e.stopPropagation()}>
 
@@ -72,7 +73,8 @@ function FlowerLibraryModal({ isOpen, onClose }) {
 
         <button className="modal-close" onClick={onClose} aria-label="Fermer">✕</button>
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }
 

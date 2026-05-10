@@ -131,7 +131,7 @@ function FlowerModal({ flowers, onClose }) {
           {/* Où le trouver */}
           {locations.length > 0 && (
             <div className="modal-section">
-              <h3 className="modal-section-label">Où le trouver ? 🔭</h3>
+              <h3 className="modal-section-label">Où les trouver ?</h3>
               {locations.map((loc, i) => (
                 <div key={i} className="modal-location-block">
                   {loc.label && <strong className="modal-location-label">{loc.label}</strong>}

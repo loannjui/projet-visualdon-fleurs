@@ -294,7 +294,7 @@ h2 {
 .panel-title {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem !important;
   color: var(--text-primary);
 }
 
@@ -308,6 +308,11 @@ h2 {
 }
 
 /* ─── PANEL COULEURS DOMINANTES (haut-gauche) ─────────────────── */
+
+.library-modal{
+  position: relative;
+  z-index: 9999;
+}
 
 .panel-dominant {
   top: 28px;
@@ -631,7 +636,7 @@ input[type="range"]::-moz-range-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 200;
+  z-index: 1000;
   animation: fadeIn 0.2s ease;
 }
 
@@ -831,7 +836,7 @@ input[type="range"]::-moz-range-thumb {
 
 .credits {
   position: fixed;
-  z-index: 9999;
+  z-index: 100;
   padding: 0.55rem 1.1rem;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
