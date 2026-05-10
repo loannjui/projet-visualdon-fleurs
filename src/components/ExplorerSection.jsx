@@ -146,6 +146,10 @@ function ExplorerSection({ onHome }) {
 
       {/* Panneaux de contrôle — fixes sur l'écran pendant tout le scroll */}
       <div className="controls-overlay">
+        <button className="home-btn" onClick={onHome} aria-label="Retour à l'accueil">
+          ← Accueil
+        </button>
+
         <div className="panel panel-dominant">
           <div className="panel-dominant-header">
             <span className="panel-title">Couleurs dominantes</span>
@@ -189,10 +193,6 @@ function ExplorerSection({ onHome }) {
           <VilleIllustration className="svg-layer" />
         </div>
       </div>
-
-      <button className="home-btn" onClick={onHome} aria-label="Retour à l'accueil">
-        ← Accueil
-      </button>
 
       <FlowerModal flowers={selectedFlowers} onClose={() => setSelectedFlowers([])} />
     </section>

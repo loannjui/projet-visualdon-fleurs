@@ -66,7 +66,7 @@ function FlowerModal({ flowers, onClose }) {
       <div className="modal-card" ref={cardRef} onClick={e => e.stopPropagation()}>
 
         {/* Onglets + navigation */}
-        <div className="modal-tabs-row">
+        <div className="modal-tabs-row" style={{ '--active-color': flower.couleur }}>
           {total > 1 && (
             <button
               className="modal-nav-btn"
@@ -81,7 +81,6 @@ function FlowerModal({ flowers, onClose }) {
                 key={f.nom}
                 ref={i === activeTab ? activeTabRef : null}
                 className={`modal-tab${i === activeTab ? ' modal-tab--active' : ''}`}
-                style={{ '--tab-color': f.couleur }}
                 onClick={() => setActiveTab(i)}
               >
                 {f.nom}

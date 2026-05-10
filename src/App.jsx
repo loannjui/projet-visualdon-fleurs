@@ -11,6 +11,7 @@ function App() {
         ? <HeroSection key="hero" onCTAClick={() => setView('explorer')} />
         : <ExplorerSection key="explorer" onHome={() => setView('hero')} />
       }
+      <p className="credits">Sources : [placeholder]</p>
     </main>
   )
 }

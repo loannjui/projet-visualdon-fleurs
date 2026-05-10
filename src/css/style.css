@@ -105,6 +105,7 @@ h2 {
 }
 
 .hero-cta p {
+  font-size: 1rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
   margin: 0 0 1.5rem;
@@ -116,7 +117,7 @@ h2 {
   border: 1px solid #fff;
   padding: 14px 1.4rem 15px;
   border-radius: 999px;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-family: var(--font-display);
   font-weight: 600;
   text-transform: uppercase;
@@ -160,9 +161,9 @@ h2 {
 }
 
 .home-btn {
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  position: absolute;
+  top: 28px;
+  right: 185px;
   z-index: 100;
   background: #fff;
   color: var(--text-primary);
@@ -268,14 +269,14 @@ h2 {
 .panel-title {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--text-primary);
 }
 
 .panel-label-small {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--text-secondary);
@@ -461,7 +462,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   font-family: var(--font-display);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   color: var(--text-secondary);
   margin-top: 4px;
 }
@@ -530,7 +531,7 @@ input[type="range"]::-moz-range-thumb {
 
 .swatch-empty-msg {
   font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--text-secondary);
 }
 
@@ -616,20 +617,22 @@ input[type="range"]::-moz-range-thumb {
 .modal-tabs-row {
   display: flex;
   align-items: stretch;
-  border-bottom: 1.5px solid #eee;
+  background: var(--active-color, #e8ddd4);
+  border-radius: 16px 16px 0 0;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
   gap: 0;
+  transition: background 0.3s ease;
 }
 
 .modal-nav-btn {
   background: none;
   border: none;
-  border-bottom: none;
   font-size: 1.4rem;
-  color: #bbb;
+  color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
   padding: 0 12px;
   line-height: 1;
-  transition: color 0.15s, background 0.15s;
+  transition: color 0.15s;
   flex-shrink: 0;
   align-self: stretch;
   display: flex;
@@ -637,8 +640,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .modal-nav-btn:hover {
-  color: #333;
-  background: #f4f4f4;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-tabs {
@@ -655,27 +657,29 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .modal-tab {
-  background: var(--tab-color, #ddd);
+  background: none;
   border: none;
-  padding: 10px 16px;
+  border-bottom: 2px solid transparent;
+  padding: 16px 20px;
   font-family: var(--font-display);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #fff;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.38);
   cursor: pointer;
   white-space: nowrap;
   flex-shrink: 0;
-  opacity: 0.4;
-  transition: opacity 0.2s;
+  transition: color 0.2s, border-color 0.2s;
+  margin-bottom: -1.5px;
 }
 
 .modal-tab--active {
-  opacity: 1;
+  font-weight: 700;
+  color: #1a1a1a;
+  border-bottom-color: #1a1a1a;
 }
 
 .modal-tab:not(.modal-tab--active):hover {
-  opacity: 0.65;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /* ─── CORPS ───────────────────────────────────────────────────── */
@@ -707,12 +711,12 @@ input[type="range"]::-moz-range-thumb {
 .modal-species {
   font-style: italic;
   color: var(--text-secondary);
-  font-size: 0.85rem;
+  font-size: 1rem;
   margin: 0 0 8px;
 }
 
 .modal-description {
-  font-size: 0.88rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: var(--text-primary);
   margin: 0;
@@ -735,7 +739,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .modal-section-text {
-  font-size: 0.88rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: var(--text-primary);
   margin: 0 0 4px;
@@ -753,7 +757,7 @@ input[type="range"]::-moz-range-thumb {
 
 .modal-location-label {
   display: block;
-  font-size: 0.88rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 2px;
 }
@@ -787,6 +791,24 @@ input[type="range"]::-moz-range-thumb {
 
 .modal-close:hover {
   background: rgba(0, 0, 0, 0.14);
+}
+
+/* ─── CRÉDITS (bas-droite, toutes pages) ─────────────────────── */
+
+.credits {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.5rem;
+  z-index: 200;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+}
+
+.explorer-section ~ .credits {
+  color: var(--text-secondary);
 }
 
 @keyframes pageIn {

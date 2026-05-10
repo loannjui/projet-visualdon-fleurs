@@ -74,7 +74,7 @@ export function updateAllLayers(flowers, currentAltitude) {
 
   assignRandomGSAP(montFlowers,   'montagne', 20, shapeToFlower)
   assignRandomGSAP(plaineFlowers, 'plaine',   35, shapeToFlower, 0.06)
-  assignRandomGSAP(villeFlowers,  'ville',    31, shapeToFlower)
+  assignRandomGSAP(villeFlowers,  'ville',    39, shapeToFlower)
 
   return shapeToFlower
 }
