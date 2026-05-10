@@ -1,6 +1,6 @@
 :root {
   --bg-hero: #1a1a1a;
-  --bg-explorer: #f0eee8;
+  --bg-explorer: #F4F5F8;
   --bg-panel: #ffffff;
   --text-primary: #1a1a1a;
   --text-secondary: #888888;
@@ -88,10 +88,10 @@ h2 {
   left: 5%;
   top: 50%;
   transform: translateY(-50%);
-  background: #000;
+  background: var(--bg-hero);
   color: #fff;
   padding: 2.5rem 3rem;
-  border-radius: 5px;
+  border-radius: 10px;
   z-index: 10;
   width: clamp(300px, 54.6vw, 1048px);
 }
@@ -135,13 +135,13 @@ h2 {
 
 .grid-mode-toggle {
   position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
+  top: 28px;
+  right: 28px;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.55);
+  background: var(--bg-hero);
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 0.45rem 1rem;
+  border: 1px solid var(--bg-hero);
+  padding: 0.55rem 1.1rem;
   border-radius: 999px;
   font-size: 0.75rem;
   font-family: var(--font-display);
@@ -149,21 +149,21 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   cursor: pointer;
-  backdrop-filter: blur(6px);
   transition:
     background 0.2s,
     border-color 0.2s;
 }
 
 .grid-mode-toggle:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.6);
+  background: var(--bg-panel);
+  color: var(--bg-hero);
+  border-color: var(--bg-panel);
 }
 
 .home-btn {
   position: absolute;
-  top: 28px;
-  right: 185px;
+  bottom: 4.5rem;
+  right: 1.5rem;
   z-index: 100;
   background: #fff;
   color: var(--text-primary);
@@ -261,7 +261,7 @@ h2 {
 .panel {
   position: absolute;
   background: var(--bg-panel);
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
   pointer-events: auto;
 }
@@ -603,7 +603,7 @@ input[type="range"]::-moz-range-thumb {
 
 .modal-card {
   background: #fff;
-  border-radius: 16px;
+  border-radius: 10px;
   max-width: 580px;
   width: 92%;
   max-height: 88vh;
@@ -618,7 +618,7 @@ input[type="range"]::-moz-range-thumb {
   display: flex;
   align-items: stretch;
   background: var(--active-color, #e8ddd4);
-  border-radius: 16px 16px 0 0;
+  border-radius: 10px 10px 0 0;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
   gap: 0;
   transition: background 0.3s ease;
@@ -764,7 +764,7 @@ input[type="range"]::-moz-range-thumb {
 
 .modal-funfact {
   background: #f9f7f2;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 14px 16px;
   border-top: none;
 }
@@ -797,14 +797,19 @@ input[type="range"]::-moz-range-thumb {
 
 .credits {
   position: fixed;
+  z-index: 9999;
+  padding: 0.55rem 1.1rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
   bottom: 1.25rem;
   right: 1.5rem;
   z-index: 200;
   margin: 0;
   font-family: var(--font-body);
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--bg-hero);
   pointer-events: none;
+  background-color: var(--bg-panel);
 }
 
 .explorer-section ~ .credits {

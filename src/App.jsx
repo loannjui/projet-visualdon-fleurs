@@ -11,7 +11,7 @@ function App() {
         ? <HeroSection key="hero" onCTAClick={() => setView('explorer')} />
         : <ExplorerSection key="explorer" onHome={() => setView('hero')} />
       }
-      <p className="credits">Sources : [placeholder]</p>
+      <p className="credits">Données : Info Flora / Swiss National Databank of Vascular Plants, via GBIF.org</p>
     </main>
   )
 }

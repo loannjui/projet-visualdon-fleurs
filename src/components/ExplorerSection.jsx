@@ -37,10 +37,7 @@ function ExplorerSection({ onHome }) {
     setShapeToFlower(mapping)
   }, [flowers, altitude])
 
-  // Slide a 12-color window through flowers sorted by center altitude as altitude changes.
-  // This ensures the palette changes continuously even when the flower set is constant
-  // (which happens below ~1000m where all 200 flowers bloom).
-  const swatchAltitude = Math.round(altitude / 50) * 50
+  const swatchAltitude = Math.round(altitude / 300) * 300
   const displayedColors = useMemo(() => {
     const seen = new Set()
     const byCenter = []
