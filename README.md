@@ -3,6 +3,7 @@
 ## Description
 
 Visualisation scrollytelling de la flore suisse organisée par altitude et par mois de floraison. Le site se compose de deux vues : un écran d'accueil avec une grille de couleurs (mode aléatoire ou organisée par altitude et mois), et une section d'exploration interactive avec trois paysages SVG illustrés (montagne, plaine, ville). En faisant défiler la page, l'altitude change progressivement et les formes du paysage se colorent avec les teintes des espèces qui fleurissent à ce niveau. Un filtre par mois permet d'affiner la sélection. Cliquer sur une forme ou sur une couleur dominante ouvre une fiche détaillée de la fleur correspondante.
+La page d'accueil contient également une librairie regroupant toutes les fleurs présentes sur le site, permettant aux utilisateurs d’explorer l’ensemble des espèces indépendamment des filtres utilisés dans la partie explorative. 
 
 ## Contexte
 
