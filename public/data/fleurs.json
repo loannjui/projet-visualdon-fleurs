@@ -196,7 +196,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuusk%20Keila-Paldiski%20rdt%20%C3%A4%C3%A4res.jpg",
     "description": "Ses aiguilles quadrangulaires, que l'on peut faire rouler entre les doigts contrairement aux aiguilles plates du sapin, sont fixées sur de petits coussinets persistants qui restent sur les rameaux nus après leur chute. Ses cônes tombent entiers à maturité, alors que ceux du sapin se désagrègent sur l'arbre.",
     "localisation": "En ville : Planté isolément dans les parcs et jardins, parfois en haie taillée.\nEn plaine : Rare à l'état naturel en dessous de 600 m — surtout planté en monoculture sylvicole intensive.\nEn montagne : Forme les grandes pessières sombres entre 800 et 1 800 m, souvent en peuplements purs.",
-    "fun_fact": "La table d'harmonie des violons Stradivarius est taillée dans de l'épicéa des Alpes poussé lentement en altitude. Les luthiers sélectionnent des arbres à cernes ultra-réguliers dont la structure acoustique n'a pas encore été reproduite par aucun matériau synthétique.",
+    "fun_fact": "La table d'harmonie des violons Stradivarius est taillée dans de l'épicéa des Alpes poussé lentement en altitude. Les luthiers sélectionnent des arbres à cernes ultra-réguliers dont les propriétés acoustiques sont difficiles à reproduire — un domaine de recherche actif en acoustique du bois.",
     "note_correction": "",
     "verification": "OK"
   },
@@ -1520,7 +1520,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tofieldia%20calyculata%20habit.jpg",
     "description": "Cette petite plante des tourbières alpines, aux fleurs blanc crème disposées en épi dense, est l'une des plus discrètes de la flore de haute altitude. Ses feuilles engainantes basales en éventail la rapprochent visuellement des iris miniatures, bien qu'elle n'y soit pas apparentée.",
     "localisation": "En ville : Absente — exige des tourbières vivantes et intactes.\nEn plaine : Prairies tourbeuses calcaires, bords de sources — en forte régression en plaine.\nEn montagne : Plus fréquente entre 1 500 et 2 800 m dans les zones humides calcaires d'alpage.",
-    "fun_fact": "La tofieldie est l'un des meilleurs indicateurs de tourbières calcaires (tourbières basophiles) — des habitats parmi les plus menacés d'Europe. Sa présence signale un sol saturé d'eau non acide et non fertilisé depuis au moins plusieurs décennies, un milieu impossible à recréer une fois drainé.",
+    "fun_fact": "La tofieldie est un bon indicateur de tourbières calcaires — des habitats parmi les plus menacés d'Europe. Sa présence signale un sol saturé d'eau non acide et non fertilisé depuis plusieurs décennies, des conditions très difficiles à restaurer une fois le milieu drainé.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -1668,7 +1668,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/ResedaLutea-overz-kl.jpg",
     "description": "Ses épis allongés de petites fleurs jaune pâle irrégulières dégagent un parfum délicieux et persistant, surtout le soir. Ses feuilles ondulées-crépues et ses tiges robustes en font une plante facilement reconnaissable sur les décombres secs calcaires où elle affectionne de s'installer.",
     "localisation": "En ville : Décombres, talus, pieds de murs, bords de routes — pionnière des sols remaniés calcaires.\nEn plaine : Friches calcaires, gravières, champs abandonnés, bords de voies ferrées.\nEn montagne : Remonte jusqu'à 1 400 m sur les éboulis calcaires et les versants secs.",
-    "fun_fact": "Le réséda des teinturiers (Reseda luteola), cousin proche, était la principale source de teinture jaune en Europe jusqu'à l'invention des colorants synthétiques au XIXe siècle. La luteoline qu'il contient donnait aux textiles un jaune pur et solide à la lumière — une qualité impossible à obtenir avec le safran ou la gaude.",
+    "fun_fact": "Le réséda des teinturiers (Reseda luteola), cousin proche, était la principale source de teinture jaune en Europe jusqu'à l'invention des colorants synthétiques au XIXe siècle. La luteoline qu'il contient donnait aux textiles un jaune stable à la lumière, difficile à obtenir avec d'autres plantes.",
     "note_correction": "",
     "verification": "OK"
   },
@@ -1771,7 +1771,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Paulownia%20tomentosa%20JPG2a.jpg",
     "description": "Ses fleurs lilas en trompette, regroupées en panicules dressées avant les feuilles en avril, dégagent un parfum vanillé-fleuri intense. Ses immenses feuilles, parmi les plus grandes des arbres tempérés (jusqu'à 70 cm), lui donnent un aspect tropical démesuré dans les paysages européens.",
     "localisation": "En ville : Planté dans les parcs et les jardins pour sa floraison précoce spectaculaire — de plus en plus fréquent.\nEn plaine : S'échappe dans les friches chaudes, les bords de routes et les terrains vagues en zone urbaine chaude.\nEn montagne : Limité aux zones basses à hiver doux, rarement au-delà de 500 m.",
-    "fun_fact": "Le paulownia est l'arbre à croissance la plus rapide au monde — jusqu'à 6 mètres la première année dans les conditions optimales. Son bois très léger mais résistant est utilisé en lutherie au Japon depuis des siècles sous le nom de 'kiri' pour fabriquer des koto et des sandales traditionnelles.",
+    "fun_fact": "Le paulownia figure parmi les arbres à croissance très rapide en zone tempérée — il peut gagner 2 à 3 mètres par an dans de bonnes conditions. Son bois très léger mais résistant est utilisé en lutherie au Japon depuis des siècles sous le nom de 'kiri' pour fabriquer des instruments traditionnels.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -2003,7 +2003,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Belis%20peremnis%20-%20panoramio.jpg",
     "description": "Ses capitules blancs à cœur jaune, qui se ferment la nuit et par temps pluvieux, peuvent fleurir de janvier à novembre — presque toute l'année lors des hivers doux. Ses petites feuilles spatulées en rosette rase résistent à des tailles répétées et au piétinement le plus intense.",
     "localisation": "En ville : La plante des pelouses urbaines par excellence — pelouses de parcs, bords de trottoirs, espaces verts publics.\nEn plaine : Prairies de pâturage, bords de chemins, champs abandonnés — indicatrice de pelouses régulièrement fauchées.\nEn montagne : Remonte jusqu'à 2 500 m dans les alpages fréquentés par les animaux.",
-    "fun_fact": "En anglais, la pâquerette se nomme 'daisy' — contraction de 'day's eye' (l'œil du jour) — en référence à ses capitules qui s'ouvrent au lever du soleil et se ferment à son coucher. Placez une pâquerette dans l'obscurité en plein jour : elle se refermera en quelques heures, fidèle à son horloge lumineuse.",
+    "fun_fact": "En anglais, la pâquerette se nomme 'daisy' — contraction de 'day's eye' (l'œil du jour) — en référence à ses capitules qui s'ouvrent au lever du soleil et se ferment à son coucher. Ce comportement est contrôlé par une horloge circadienne interne, pas uniquement par la lumière directe.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -2361,7 +2361,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Sanguisorba_officinalis_RF.jpg",
     "description": "Ses têtes florales ovoïdes pourpre foncé, sans pétales, sont formées uniquement de sépales colorés et d'étamines saillantes qui donnent à la plante son aspect satiné et velouté. Sa haute stature — jusqu'à 120 cm — la distingue nettement de la petite pimprenelle des pelouses sèches.",
     "localisation": "En ville : Pelouses humides non traitées, bords de fossés — rare en milieu très urbanisé.\nEn plaine : Prairies de fauche humides, bords de cours d'eau, mégaphorbiaies — de plus en plus rare avec le drainage agricole.\nEn montagne : Remonte jusqu'à 1 800 m dans les prairies fraîches.",
-    "fun_fact": "La grande pimprenelle est la plante hôte obligatoire de plusieurs espèces d'azurés (Phengaris teleius et nausithous), des papillons parmi les plus menacés d'Europe. Ces papillons disparaissent irrémédiablement dès que leurs prairies humides sont drainées ou fertilisées — une disparition toujours définitive.",
+    "fun_fact": "La grande pimprenelle est la plante hôte de plusieurs espèces d'azurés (Phengaris teleius et nausithous), des papillons parmi les plus menacés d'Europe. Ces papillons disparaissent généralement des secteurs où leurs prairies humides sont drainées ou fertilisées — des pertes le plus souvent irréversibles à l'échelle humaine.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -2609,7 +2609,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Potentilla%20reptans%20at%20Col%20de%20Tavaneuse%20%281%29.jpg",
     "description": "Ses longs stolons rouges, qui peuvent s'étendre à plus d'un mètre et produire des rosettes enracinées tous les 15 cm, lui permettent de couvrir d'immenses surfaces en peu de temps. Ses fleurs jaune vif aux cinq pétales parfaitement ronds sont parmi les plus géométriquement régulières de la flore prairiale.",
     "localisation": "En ville : Pelouses humides, bords de fossés, zones de rétention d'eau — très commune dans les espaces verts humides.\nEn plaine : Prairies humides, bords de rivières, fossés, chemins humides — présente dans tous les milieux frais.\nEn montagne : Remonte jusqu'à 2 000 m dans les alpages humides.",
-    "fun_fact": "Une seule plante peut produire en une saison des stolons totalisant plus de 30 mètres de longueur, créant un réseau de plusieurs dizaines de rosettes filles interconnectées. Ces clones partagent eau et nutriments via les stolons — une colonie végétale en miniature qui fonctionne comme un organisme collectif.",
+    "fun_fact": "Ses stolons, qui peuvent totaliser plus de 30 mètres par plant en une saison, forment un réseau de rosettes interconnectées qui partagent eau et minéraux. Ce réseau clonal permet à la plante de survivre même si une partie est fauchée ou piétinée.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3156,7 +3156,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20140819Hypochaeris%20radicata.jpg",
     "description": "Chicorée (Hypochaeris radicata) se remarque par sa silhouette lumineuse de grande composée, très visible quand elle colonise talus, friches ou prairies. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : Elle peut apparaître dans les parcs, friches, pieds de murs, terrains vagues ou zones peu tondues.\n\nEn plaine et campagne : On la trouve volontiers dans les prés, friches, talus, bords de chemin et clairières bien ouvertes.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "Fun fact : Les astéracées misent sur l'effet de groupe : une seule tête florale peut en réalité rassembler des dizaines de petites fleurs.",
+    "fun_fact": "Ses fleurs bleu vif se ferment exactement à la même heure chaque matin — Linné l'avait intégrée dans son 'horloge florale'. Ce comportement est contrôlé par une horloge biologique interne, pas seulement par la lumière.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3344,7 +3344,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%D4%B3%D5%B6%D5%A1%D6%80%D5%A2%D5%B8%D6%82%D5%AF.jpg",
     "description": "Cette primevère de grande taille, aux fleurs jaune soufre plus petites mais plus nombreuses que la primevère officinale, forme souvent des hybrides avec elle là où elles cohabitent — créant des populations intermédiaires de toutes les teintes entre jaune pâle et jaune vif. Ses feuilles plus grandes et plus dentées lui confèrent une allure robuste.",
     "localisation": "En ville : Sous-bois de parcs, jardins d'ombre — plantée pour sa floraison printanière précoce.\nEn plaine : Lisières fraîches, forêts de feuillus, haies bocagères — plus forestière que la primevère officinale.\nEn montagne : Remonte jusqu'à 2 200 m dans les forêts de montagne et les lisières.",
-    "fun_fact": "Primula elatior est génétiquement capable de s'hybrider avec au moins 8 autres espèces du genre Primula — un record parmi les plantes d'Europe. Ces hybrides interspécifiques souvent fertiles créent des complexes de populations intermédiaires qui ont longtemps désespéré les taxonomistes tentant de tracer des limites précises.",
+    "fun_fact": "Primula elatior s'hybride facilement avec plusieurs autres espèces du genre Primula là où leurs aires se chevauchent. Ces hybrides interspécifiques souvent fertiles créent des populations intermédiaires qui compliquent la délimitation des espèces — un cas d'école en taxonomie végétale.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3511,7 +3511,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Galeopsis%20tetrahit%20bloemen2.jpg",
     "description": "Galeopsis tetrahit (Galeopsis tetrahit) se remarque par sa personnalité de plante mellifère et souvent odorante, bien reconnaissable dans la famille des menthes. Elle s'accorde bien aux ambiances de montagne, où chaque floraison doit profiter d'une fenêtre brève mais lumineuse.",
     "localisation": "En ville : En contexte urbain, on l'observe surtout dans les coins un peu laissés au naturel, pas dans les espaces trop minéraux.\n\nEn plaine et campagne : On la rencontre dans des milieux assez variés : prairies, talus, lisières, clairières ou terrains ouverts.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "Clin d'œil botanique : Chez les lamiacées, un simple froissement des feuilles suffit souvent à libérer toute une palette d'arômes.",
+    "fun_fact": "C'est l'une des premières plantes à avoir permis de comprendre la spéciation par hybridation : Karpechenko a reproduit expérimentalement en 1928 une nouvelle espèce fertile en croisant deux Galeopsis — une démonstration pionnière en génétique végétale.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3534,7 +3534,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Silene%20nutans%20220505.jpg",
     "description": "Silene penche (Silene nutans) se remarque par la finesse de ses tiges et le dessin de ses fleurs, souvent étoilées, découpées ou très graphiques. Elle s'accorde bien aux ambiances de montagne, où chaque floraison doit profiter d'une fenêtre brève mais lumineuse.",
     "localisation": "En ville : Elle peut se rencontrer dans les jardins, talus ou lisières urbaines quand le sol et la lumière lui conviennent.\n\nEn plaine et campagne : On la trouve volontiers dans les prés, friches, talus, bords de chemin et clairières bien ouvertes.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "Fun fact : Dans ce groupe, la délicatesse visuelle cache souvent une vraie endurance au vent et aux terrains pauvres.",
+    "fun_fact": "Comme tous les silènes alpins, il produit des huiles dans ses tiges et ses calices qui piègent parfois de petits insectes — un comportement proto-carnivore étudié mais non concluant à ce jour.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3557,7 +3557,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%D4%BD%D5%A1%D6%80%D5%A2%D5%B8%D6%82%D5%AF.jpg",
     "description": "Grageline (Lapsana communis) se remarque par sa silhouette lumineuse de grande composée, très visible quand elle colonise talus, friches ou prairies. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : Elle peut apparaître dans les parcs, friches, pieds de murs, terrains vagues ou zones peu tondues.\n\nEn plaine et campagne : La plaine et la campagne sont souvent son décor idéal : prairies, pâtures, accotements, jachères ou lisières lumineuses.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "À savoir : Les astéracées misent sur l'effet de groupe : une seule tête florale peut en réalité rassembler des dizaines de petites fleurs.",
+    "fun_fact": "La metformine, médicament antidiabétique le plus prescrit au monde avec plus de 150 millions d'utilisateurs, est dérivée de la guanidine contenue dans le galéga. Ce lien pharmacologique a été établi dans les années 1920.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3579,7 +3579,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2014-07-03%20Larix%20decidua%20cone%20%26%20foliage%2C%20Valle%20di%20Cogne%2C%20Italian%20Alps.jpg",
     "description": "Meleze d'Europe (Larix decidua) se remarque par sa manière discrète mais sûre de donner du caractère à un paysage. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : En contexte urbain, on l'observe surtout dans les coins un peu laissés au naturel, pas dans les espaces trop minéraux.\n\nEn plaine et campagne : Elle sait trouver sa place dans plusieurs décors ruraux, à condition d'avoir la bonne lumière et un sol adapté.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "Clin d'œil botanique : Même discrète, elle peut devenir spectaculaire quand elle pousse en groupe dans son milieu favori.",
+    "fun_fact": "C'est le seul conifère européen à perdre ses aiguilles en hiver. Ses troncs conservés dans la vase de la lagune de Venise depuis plus de 1 000 ans sont encore en bon état structurel — une résistance à la décomposition exceptionnelle.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3624,7 +3624,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Potentilla%20aurea%20%28flower%29.jpg",
     "description": "Potentille doree (Potentilla aurea) se remarque par son charme de rosacée sauvage, entre élégance de la floraison et présence familière dans les haies ou les lisières. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : Elle peut se rencontrer dans les jardins, talus ou lisières urbaines quand le sol et la lumière lui conviennent.\n\nEn plaine et campagne : En campagne, elle aime les zones de transition : haies, talus, lisières et vieux jardins.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "Fun fact : Beaucoup de rosacées appartiennent à notre quotidien sans qu'on y pense : elles sont partout, des haies sauvages aux vergers.",
+    "fun_fact": "Ses stomates sont orientés uniquement sur la face inférieure argentée des feuilles, qui réfléchit la chaleur solaire intense de la haute montagne — une adaptation morphologique mesurable à la radiation alpine.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3672,7 +3672,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Neottia%20nidus-avis%20plants.jpg",
     "description": "Neottie nid d'oiseau (Neottia nidus-avis) se remarque par la finesse de ses fleurs d'orchidée terrestre, bien plus subtile qu'exotique mais captivante de près. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : La ville n'est pas son terrain favori ; elle préfère des sites plus calmes et moins perturbés.\n\nEn plaine et campagne : Elle sait trouver sa place dans plusieurs décors ruraux, à condition d'avoir la bonne lumière et un sol adapté.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "Petit détail amusant : Chez les orchidées, la forme des fleurs sert souvent de signal très précis pour guider les pollinisateurs.",
+    "fun_fact": "Sans chlorophylle, elle tire toute son énergie des champignons mycorhiziens associés aux racines de hêtres voisins — un parasitisme indirect appelé myco-hétérotrophie, documenté chez moins de 1% des plantes à fleurs.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3695,7 +3695,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Hepatica%20nobilis%20plant.JPG",
     "description": "Hepatique a trois lobes (Hepatica nobilis) se remarque par son éclat souvent printanier, qui donne tout de suite de la lumière aux prairies fraîches ou aux lisières. Elle s'accorde bien aux ambiances de montagne, où chaque floraison doit profiter d'une fenêtre brève mais lumineuse.",
     "localisation": "En ville : En contexte urbain, on l'observe surtout dans les coins un peu laissés au naturel, pas dans les espaces trop minéraux.\n\nEn plaine et campagne : On la rencontre dans des milieux assez variés : prairies, talus, lisières, clairières ou terrains ouverts.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "Fun fact : Les renonculacées aiment souvent ouvrir la saison avec éclat, quand le reste de la végétation hésite encore.",
+    "fun_fact": "Ses graines portent un élaisome qui attire les fourmis — celles-ci les transportent dans leur nid, consomment l'appendice nutritif et abandonnent la graine dans leurs galeries. Ce mode de dispersion (myrmécochorie) est partagé avec plus de 3 000 espèces en Europe.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3839,7 +3839,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Knautia%20dipsacifolia01.jpg",
     "description": "Knautie à feuilles de cardere (Knautia dipsacifolia) se remarque par sa manière discrète mais sûre de donner du caractère à un paysage. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : En contexte urbain, on l'observe surtout dans les coins un peu laissés au naturel, pas dans les espaces trop minéraux.\n\nEn plaine et campagne : En campagne, elle aime les zones de transition : haies, talus, lisières et vieux jardins.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "À savoir : Beaucoup de plantes sauvages deviennent impressionnantes non pas seules, mais quand elles dessinent tout un paysage.",
+    "fun_fact": "Elle existe sous deux formes florales (hétérostylie) : certains pieds ont un style long et des étamines courtes, d'autres l'inverse. Cette asymétrie oblige la pollinisation croisée entre les deux formes — un mécanisme étudié par Darwin dans son ouvrage sur les fleurs dimorphes.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3907,7 +3907,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Carduus%20defloratus%20-%20blossom%20%28aka%29.jpg",
     "description": "Chardon decapite (Carduus defloratus) se remarque par ses inflorescences en capitules, qui donnent l'impression d'une seule grande fleur alors qu'elles en réunissent beaucoup. Elle s'accorde bien aux ambiances de montagne, où chaque floraison doit profiter d'une fenêtre brève mais lumineuse.",
     "localisation": "En ville : En contexte urbain, on l'observe surtout dans les coins un peu laissés au naturel, pas dans les espaces trop minéraux.\n\nEn plaine et campagne : La plaine et la campagne sont souvent son décor idéal : prairies, pâtures, accotements, jachères ou lisières lumineuses.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "Fun fact : Les astéracées misent sur l'effet de groupe : une seule tête florale peut en réalité rassembler des dizaines de petites fleurs.",
+    "fun_fact": "Il est inscrit sur la liste rouge suisse et sa présence déclenche automatiquement des mesures de protection. C'est une espèce dite 'parapluie' — protéger son habitat bénéficie à des dizaines d'autres espèces spécialistes des pelouses calcaires.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3936,7 +3936,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Campanula%20scheuchzeri.JPG",
     "description": "Cette campanule alpine aux grandes clochettes bleu-violet intense, portées sur des tiges relativement courtes et raides, est l'une des plus colorées de la flore d'altitude. Ses feuilles étroites et ses fleurs légèrement inclinées lui donnent une allure élancée très caractéristique des pelouses rocailleuses.",
     "localisation": "En ville : Absent des zones urbanisées — strictement alpin.\nEn plaine : Rare — uniquement dans quelques stations préalpines très fraîches.\nEn montagne : Présent entre 1 500 et 3 000 m dans les pelouses rocailleuses calcaires et les éboulis stabilisés.",
-    "fun_fact": "La campanule de Scheuchzer doit son nom au botaniste suisse Johann Jakob Scheuchzer (1672-1733), l'un des premiers à décrire systématiquement la flore des Alpes. Son ouvrage Itinera per Helvetiae Alpinas Regiones (1723) est considéré comme l'acte de naissance de la botanique alpine scientifique.",
+    "fun_fact": "Elle doit son nom au botaniste suisse Johann Jakob Scheuchzer (1672–1733), auteur de l'Itinera per Helvetiae Alpinas Regiones (1723), considéré comme l'un des actes fondateurs de la botanique alpine scientifique.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3963,7 +3963,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Viburnum_opulus_RF.jpg",
     "description": "Boule de neige (Viburnum opulus) se remarque par sa manière discrète mais sûre de donner du caractère à un paysage. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : En contexte urbain, on l'observe surtout dans les coins un peu laissés au naturel, pas dans les espaces trop minéraux.\n\nEn plaine et campagne : Elle sait trouver sa place dans plusieurs décors ruraux, à condition d'avoir la bonne lumière et un sol adapté.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "Petit détail amusant : Beaucoup de plantes sauvages deviennent impressionnantes non pas seules, mais quand elles dessinent tout un paysage.",
+    "fun_fact": "Ses grandes fleurs périphériques stériles servent uniquement de signal visuel pour attirer les pollinisateurs vers les petites fleurs centrales fertiles. Cette division du travail entre fleurs d'une même inflorescence est appelée 'capitule hétérogame'.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -3986,7 +3986,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Epipactis%20atrorubens%20flowers.jpg",
     "description": "Épipactis pourpre noiratre (Epipactis atrorubens) se remarque par la finesse de ses fleurs d'orchidée terrestre, bien plus subtile qu'exotique mais captivante de près. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : La ville n'est pas son terrain favori ; elle préfère des sites plus calmes et moins perturbés.\n\nEn plaine et campagne : On la rencontre dans des milieux assez variés : prairies, talus, lisières, clairières ou terrains ouverts.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "Fun fact : Chez les orchidées, la forme des fleurs sert souvent de signal très précis pour guider les pollinisateurs.",
+    "fun_fact": "Elle est partiellement myco-hétérotrophe — elle tire une partie de son carbone directement des champignons mycorhiziens associés aux arbres voisins, ce qui lui permet de pousser dans des sous-bois quasi privés de lumière.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4008,7 +4008,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Karhunputki_Angelica_sylvestris_H3382_C.JPG",
     "description": "Angelique sauvage (Angelica sylvestris) se remarque par sa personnalité botanique bien marquée, surtout quand on prend le temps de l'observer de près. Elle s'accorde bien aux ambiances de montagne, où chaque floraison doit profiter d'une fenêtre brève mais lumineuse.",
     "localisation": "En ville : En contexte urbain, on l'observe surtout dans les coins un peu laissés au naturel, pas dans les espaces trop minéraux.\n\nEn plaine et campagne : On la rencontre dans des milieux assez variés : prairies, talus, lisières, clairières ou terrains ouverts.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "Fun fact : L'angélique sauvage appartient à la même famille que la carotte, le persil et la ciguë — les apiacées sont parmi les plus difficiles à identifier avec certitude, et certaines espèces du genre sont mortellement toxiques. La ressemblance entre l'angélique sauvage et la grande ciguë (Conium maculatum) a causé des empoisonnements documentés chez des cueilleurs inexpérimentés.",
+    "fun_fact": "Ses grandes ombelles peuvent accueillir simultanément une grande diversité d'insectes — coléoptères, diptères, hyménoptères — grâce à un nectar accessible sans trompe longue. Cette ouverture à de nombreux pollinisateurs généralistes en fait un maillon important des écosystèmes humides.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4059,7 +4059,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Paprastasis%20azuolas.JPG",
     "description": "Chene pedoncule (Quercus robur) se remarque par sa manière discrète mais sûre de donner du caractère à un paysage. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : Elle peut se rencontrer dans les jardins, talus ou lisières urbaines quand le sol et la lumière lui conviennent.\n\nEn plaine et campagne : On la rencontre dans des milieux assez variés : prairies, talus, lisières, clairières ou terrains ouverts.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "À savoir : Même discrète, elle peut devenir spectaculaire quand elle pousse en groupe dans son milieu favori.",
+    "fun_fact": "Son écorce profondément crevassée héberge plus de 500 espèces d'invertébrés — plus que tout autre arbre indigène d'Europe. Un vieux chêne peut abriter simultanément des communautés entières d'insectes, de champignons et de lichens.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4153,7 +4153,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pinus%20sylvestris%20Glenmuick.jpg",
     "description": "Daille (Pinus sylvestris) se remarque par sa personnalité botanique bien marquée, surtout quand on prend le temps de l'observer de près. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : En contexte urbain, on l'observe surtout dans les coins un peu laissés au naturel, pas dans les espaces trop minéraux.\n\nEn plaine et campagne : Elle sait trouver sa place dans plusieurs décors ruraux, à condition d'avoir la bonne lumière et un sol adapté.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "Clin d'œil botanique : Beaucoup de plantes sauvages deviennent impressionnantes non pas seules, mais quand elles dessinent tout un paysage.",
+    "fun_fact": "Ses cônes se désagrègent sur l'arbre écaille par écaille — contrairement à ceux de l'épicéa qui tombent entiers. Cette différence de dispersion des graines correspond à deux stratégies évolutives distinctes face aux prédateurs de graines.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4182,7 +4182,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bistorta%20vivipara%20Longyearbyen.JPG",
     "description": "Cette renouée alpine remplace la plupart de ses fleurs par des bulbilles rougeâtres qui tombent et germent directement — une reproduction végétative quasi-exclusive adaptée aux courtes saisons alpines où la floraison et la maturation des graines sont souvent impossibles avant les premières gelées d'automne.",
     "localisation": "En ville : Absent des zones urbanisées — typiquement alpin.\nEn plaine : Rare — seulement dans quelques stations préalpines très fraîches.\nEn montagne : Très commun entre 1 500 et 3 000 m dans les pelouses fraîches et les combes à neige.",
-    "fun_fact": "La viviparité florale — remplacer les fleurs par des plantules déjà formées — est une stratégie développée indépendamment par plusieurs plantes d'altitude sur tous les continents. Elle permet de se reproduire sans pollinisateurs et sans que les graines aient à germer dans des conditions souvent défavorables à haute altitude.",
+    "fun_fact": "Elle remplace ses fleurs par des bulbilles directement développées, aptes à germer sans passer par la graine. Cette viviparité florale, adaptée aux courtes saisons alpines, a évolué indépendamment dans plusieurs lignées végétales de haute altitude sur tous les continents.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4205,7 +4205,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Platanthera%20bifolia%20%28flower%29.jpg",
     "description": "Platanthere a deux feuilles (Platanthera bifolia) se remarque par sa présence d'orchidée sauvage, souvent liée à des milieux encore équilibrés et peu brusqués. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : Elle y reste plutôt rare : les centres urbains lui conviennent mal, surtout quand le sol est trop remanié.\n\nEn plaine et campagne : Elle sait trouver sa place dans plusieurs décors ruraux, à condition d'avoir la bonne lumière et un sol adapté.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "Petit détail amusant : Chez les orchidées, la forme des fleurs sert souvent de signal très précis pour guider les pollinisateurs.",
+    "fun_fact": "Ses pollinies (masses de pollen) s'inclinent progressivement en quelques dizaines de secondes à quelques minutes après avoir été déposées sur la tête d'un insecte — un mouvement hygroscopique précisément chronométré qui assure que le pollen atteint le stigmate d'une autre fleur.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4252,7 +4252,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2015.08.22%2011.27.13%20DSCN2872%20-%20Flickr%20-%20andrey%20zharkikh.jpg",
     "description": "vergerette du Canada (Erigeron canadensis) se remarque par sa silhouette lumineuse de grande composée, très visible quand elle colonise talus, friches ou prairies. Son nom latin suggère souvent un lien avec l'Amérique du Nord. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : Elle peut apparaître dans les parcs, friches, pieds de murs, terrains vagues ou zones peu tondues.\n\nEn plaine et campagne : La plaine et la campagne sont souvent son décor idéal : prairies, pâtures, accotements, jachères ou lisières lumineuses.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "Fun fact : Chez les astéracées, ce qui ressemble à une fleur unique est souvent une véritable petite communauté de fleurs miniatures. Son nom garde aussi la mémoire d'un voyage botanique : il évoque une origine ou un lien géographique lointain.",
+    "fun_fact": "Première observation européenne documentée à Paris en 1655 — elle aurait traversé l'Atlantique dans des herbiers botaniques. En moins de 50 ans, elle avait colonisé toute l'Europe occidentale, bien avant l'ère des transports modernes : l'une des naturalisations les plus rapides jamais enregistrées.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4303,7 +4303,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Prenanthes_purpurea_RF.jpg",
     "description": "Prenanthe pourpre (Prenanthes purpurea) se remarque par sa silhouette lumineuse de grande composée, très visible quand elle colonise talus, friches ou prairies. Elle s'accorde bien aux ambiances de montagne, où chaque floraison doit profiter d'une fenêtre brève mais lumineuse.",
     "localisation": "En ville : Elle peut se rencontrer dans les jardins, talus ou lisières urbaines quand le sol et la lumière lui conviennent.\n\nEn plaine et campagne : La plaine et la campagne sont souvent son décor idéal : prairies, pâtures, accotements, jachères ou lisières lumineuses.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "Clin d'œil botanique : Les astéracées misent sur l'effet de groupe : une seule tête florale peut en réalité rassembler des dizaines de petites fleurs.",
+    "fun_fact": "Son latex blanc contient des sesquiterpène-lactones aux propriétés analgésiques légères. Les médecins médiévaux en extrayaient un 'lactucarium' utilisé comme succédané d'opium — une propriété confirmée mais modérée par la pharmacologie moderne.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4326,7 +4326,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Eupatorium%20cannabinum.jpg",
     "description": "Eupatoire Chanvrine (Eupatorium cannabinum) se remarque par sa silhouette lumineuse de grande composée, très visible quand elle colonise talus, friches ou prairies. Elle s'accorde bien aux ambiances de montagne, où chaque floraison doit profiter d'une fenêtre brève mais lumineuse.",
     "localisation": "En ville : On peut la croiser dans les espaces urbains un peu ouverts : bords de route, talus, parcs ou friches.\n\nEn plaine et campagne : On la trouve volontiers dans les prés, friches, talus, bords de chemin et clairières bien ouvertes.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "Clin d'œil botanique : Les astéracées misent sur l'effet de groupe : une seule tête florale peut en réalité rassembler des dizaines de petites fleurs.",
+    "fun_fact": "Elle ne fleurit qu'en fin d'été, quand la plupart des autres nectarifères sont épuisées — ce timing tardif en fait une ressource critique pour les papillons migrateurs comme le vulcain (Vanessa atalanta) qui se nourrissent avant l'hivernation.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4418,7 +4418,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mycelis%20muralis.jpeg",
     "description": "Cette petite laitucée aux tiges grêles portant de minuscules capitules jaunes grimpe en s'appuyant sur les murs et les rochers grâce à ses feuilles auriculées qui embrassent les supports. Elle fleurit même dans les fissures les plus étroites, parfois sur des surfaces verticales apparemment inhospitalières pour toute vie végétale.",
     "localisation": "En ville : Murs, vieux bâtiments, ruines, fissures de béton — parfaitement adaptée au milieu urbain minéral chaud.\nEn plaine : Rochers, vieilles constructions, talus pierreux — indicatrice de milieux minéraux chauds et secs.\nEn montagne : Remonte jusqu'à 1 600 m sur les rochers et les falaises exposées.",
-    "fun_fact": "La laitue des murs est capable de maintenir sa température interne légèrement supérieure à l'air ambiant en concentrant la chaleur rayonnée par les murs de pierre. Cette propriété lui permet de germer et de fleurir dans des interstices où aucune autre plante ne survit — colonisant des microhabitats thermiquement avantageux.",
+    "fun_fact": "La laitue des murs colonise les murs et les rochers grâce à ses feuilles auriculées qui lui permettent de s'ancrer dans des fissures très étroites. Sa capacité à s'établir dans des substrats très pauvres et chauds s'explique par une faible exigence en nutriments et une bonne tolérance à la sécheresse.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4441,7 +4441,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kohldistel%20%28Cirsium%20oleraceum%29%20%281%29.jpg",
     "description": "Cirse jaunatre (Cirsium oleraceum) se remarque par ses inflorescences en capitules, qui donnent l'impression d'une seule grande fleur alors qu'elles en réunissent beaucoup. Elle s'accorde bien aux ambiances de montagne, où chaque floraison doit profiter d'une fenêtre brève mais lumineuse.",
     "localisation": "En ville : En contexte urbain, on l'observe surtout dans les coins un peu laissés au naturel, pas dans les espaces trop minéraux.\n\nEn plaine et campagne : On la trouve volontiers dans les prés, friches, talus, bords de chemin et clairières bien ouvertes.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "Clin d'œil botanique : Les astéracées misent sur l'effet de groupe : une seule tête florale peut en réalité rassembler des dizaines de petites fleurs.",
+    "fun_fact": "Ses capitules rose-jaunâtre sont parmi les principales sources de nectar pour le bourdon des alpages (Bombus alpinus), une espèce strictement limitée au-dessus de 1 500 m. La disparition du cirse fragilise directement ce bourdon spécialisé.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4489,7 +4489,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Barren%20Strawberry%20%28Potentilla%20sterilis%29.jpg",
     "description": "Potentille faux fraisier (Potentilla sterilis) se remarque par sa capacité à relier beauté des fleurs et richesse du paysage, souvent jusque dans les fruits ou les jeunes pousses. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : Elle peut se rencontrer dans les jardins, talus ou lisières urbaines quand le sol et la lumière lui conviennent.\n\nEn plaine et campagne : Elle s'épanouit surtout dans les haies, lisières, vergers, fourrés clairs et bords de chemins ruraux.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "À savoir : Beaucoup de rosacées appartiennent à notre quotidien sans qu'on y pense : elles sont partout, des haies sauvages aux vergers.",
+    "fun_fact": "Ses faux-fruits mous et insipides ne contiennent pas les anthocyanes responsables du parfum et de la saveur des vraies fraises. La domestication de Fragaria a sélectionné précisément ces molécules — absentes chez la potentille malgré une morphologie similaire.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4513,7 +4513,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Teucrium%20chamaedrys%201.jpg",
     "description": "Germandree commune (Teucrium chamaedrys) se remarque par son côté souvent aromatique, avec des tiges carrées et un feuillage qui libère du parfum quand on le froisse. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : Elle peut se rencontrer dans les jardins, talus ou lisières urbaines quand le sol et la lumière lui conviennent.\n\nEn plaine et campagne : Elle sait trouver sa place dans plusieurs décors ruraux, à condition d'avoir la bonne lumière et un sol adapté.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "À savoir : Chez les lamiacées, un simple froissement des feuilles suffit souvent à libérer toute une palette d'arômes.",
+    "fun_fact": "Ses huiles essentielles contiennent du carvacrol et du thymol — les mêmes composés actifs que le thym et l'origan. Ces molécules ont des propriétés antibactériennes mesurables, ce qui explique l'usage traditionnel de la germandrée dans la conservation des aliments.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4629,7 +4629,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Trifolium%20medium%20-%20Niitv%C3%A4lja.jpg",
     "description": "Trefle intermediaire (Trifolium medium) se remarque par sa douceur de trèfle de prairie, à la fois utile au sol, apprécié des insectes et très familier des paysages ruraux. Elle s'accorde bien aux ambiances de montagne, où chaque floraison doit profiter d'une fenêtre brève mais lumineuse.",
     "localisation": "En ville : Elle peut se rencontrer dans les jardins, talus ou lisières urbaines quand le sol et la lumière lui conviennent.\n\nEn plaine et campagne : La plaine et la campagne sont souvent son décor idéal : prairies, pâtures, accotements, jachères ou lisières lumineuses.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "Fun fact : Les trèfles sont de vrais alliés des prairies : ils nourrissent les pollinisateurs tout en aidant le sol.",
+    "fun_fact": "Des études génétiques récentes suggèrent que le trèfle intermédiaire n'est pas un hybride récent entre trèfle des prés et trèfle hybride, mais une lignée autonome stabilisée depuis des milliers d'années — sa 'parenté hybride' est donc ancestrale, non contemporaine.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4655,7 +4655,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%28MHNT%29%20Sonchus%20asper%20-%20Plant%20habit.jpg",
     "description": "Laiteron piquant (Sonchus asper) se remarque par sa silhouette lumineuse de grande composée, très visible quand elle colonise talus, friches ou prairies. Elle s'accorde bien aux ambiances de montagne, où chaque floraison doit profiter d'une fenêtre brève mais lumineuse.",
     "localisation": "En ville : On peut la croiser dans les espaces urbains un peu ouverts : bords de route, talus, parcs ou friches.\n\nEn plaine et campagne : On la trouve volontiers dans les prés, friches, talus, bords de chemin et clairières bien ouvertes.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "Clin d'œil botanique : Chez les astéracées, ce qui ressemble à une fleur unique est souvent une véritable petite communauté de fleurs miniatures.",
+    "fun_fact": "Son latex contient des alcaloïdes qui inhibent les enzymes digestives des insectes — une défense biochimique. Curieusement, certaines espèces de pucerons se sont adaptées à ces toxines et colonisent spécifiquement les tiges de laiteron sans en être affectées.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4680,7 +4680,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Divlja%20ruza%20cvijet%20270508.jpg",
     "description": "Eglantier (Rosa canina) se remarque par sa capacité à relier beauté des fleurs et richesse du paysage, souvent jusque dans les fruits ou les jeunes pousses. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : Elle peut se rencontrer dans les jardins, talus ou lisières urbaines quand le sol et la lumière lui conviennent.\n\nEn plaine et campagne : En campagne, elle aime les zones de transition : haies, talus, lisières et vieux jardins.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "Clin d'œil botanique : Les rosacées offrent souvent le spectacle à deux moments : d'abord avec les fleurs, puis avec les fruits pour les oiseaux.",
+    "fun_fact": "Ses cynorrhodons contiennent jusqu'à 40 fois plus de vitamine C que les oranges à poids égal. Pendant la Seconde Guerre mondiale, la Grande-Bretagne a organisé des campagnes nationales de cueillette pour compenser l'absence d'agrumes — plusieurs centaines de tonnes récoltées chaque année.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4709,7 +4709,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Geum%20montanum.jpg",
     "description": "Benoite des montagnes (Geum montanum) se remarque par sa capacité à relier beauté des fleurs et richesse du paysage, souvent jusque dans les fruits ou les jeunes pousses. Son nom latin suggère souvent des reliefs et des terrains élevés. Elle s'accorde bien aux ambiances de montagne, où chaque floraison doit profiter d'une fenêtre brève mais lumineuse.",
     "localisation": "En ville : En contexte urbain, on l'observe surtout dans les coins un peu laissés au naturel, pas dans les espaces trop minéraux.\n\nEn plaine et campagne : En campagne, elle aime les zones de transition : haies, talus, lisières et vieux jardins.\n\nEn montagne : Elle monte franchement en altitude et peut accompagner les paysages montagnards jusque dans l'étage subalpin.",
-    "fun_fact": "À savoir : Les rosacées offrent souvent le spectacle à deux moments : d'abord avec les fleurs, puis avec les fruits pour les oiseaux.",
+    "fun_fact": "Ses fruits portent une arête crochu qui s'accroche aux poils des animaux et aux vêtements — une dispersion zoochore efficace. La forme de ces crochets a été étudiée en ingénierie comme modèle pour des systèmes d'accrochage réversibles.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4737,7 +4737,7 @@
     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Trifolium%20montanum%20-%20m%C3%A4giristik.jpg",
     "description": "Trefle des montagnes (Trifolium montanum) se remarque par sa douceur de trèfle de prairie, à la fois utile au sol, apprécié des insectes et très familier des paysages ruraux. Son nom latin suggère souvent des reliefs et des terrains élevés. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : Elle peut se rencontrer dans les jardins, talus ou lisières urbaines quand le sol et la lumière lui conviennent.\n\nEn plaine et campagne : On la trouve volontiers dans les prés, friches, talus, bords de chemin et clairières bien ouvertes.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "Petit détail amusant : Les trèfles sont de vrais alliés des prairies : ils nourrissent les pollinisateurs tout en aidant le sol.",
+    "fun_fact": "Ses racines abritent des bactéries Rhizobium fixatrices d'azote, même à haute altitude. Cette symbiose fonctionne jusqu'à 2 500 m — une limite remarquable qui explique pourquoi les trèfles contribuent à fertiliser des pelouses alpines naturellement pauvres.",
     "verification": "OK",
     "note_correction": ""
   },
@@ -4761,7 +4761,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Alfalfa-12a.JPG",
     "description": "Luzerne cultivee (Medicago sativa) se remarque par son profil de légumineuse fine et utile, aussi intéressante pour le paysage que pour la vie du sol. Elle garde une vraie présence dans les paysages d'altitude, où la belle saison est courte mais intense.",
     "localisation": "En ville : Elle peut se rencontrer dans les jardins, talus ou lisières urbaines quand le sol et la lumière lui conviennent.\n\nEn plaine et campagne : La plaine et la campagne sont souvent son décor idéal : prairies, pâtures, accotements, jachères ou lisières lumineuses.\n\nEn montagne : On la retrouve sans difficulté en montagne, parfois assez haut, là où l'été reste bref mais lumineux.",
-    "fun_fact": "Clin d'œil botanique : Comme d'autres fabacées, elle peut aider le sol grâce à son association avec des bactéries fixatrices d'azote.",
+    "fun_fact": "La luzerne cultivée (Medicago sativa) est l'une des plantes fourragères les plus productives au monde, mais son ancêtre sauvage (Medicago falcata) pousse encore spontanément dans les prairies sèches d'Europe. La domestication a principalement sélectionné un rendement en biomasse accru.",
     "note_correction": "",
     "verification": "OK"
   },
