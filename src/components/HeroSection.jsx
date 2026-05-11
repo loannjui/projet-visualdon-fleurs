@@ -18,6 +18,12 @@ function HeroSection({ onCTAClick }) {
   return (
     <section className="hero-section">
       <ColorGrid key={mode} mode={mode} fading={fading} />
+      {mode === 'data' && (
+        <>
+          <span className="axis-label axis-label--y">Altitude →</span>
+          <span className="axis-label axis-label--x">Mois →</span>
+        </>
+      )}
       <button
         className="grid-mode-toggle"
         onClick={handleToggle}
@@ -26,8 +32,9 @@ function HeroSection({ onCTAClick }) {
       </button>
       <FlowerLibraryModal isOpen={isLibraryOpen} onClose={() => setIsLibraryOpen(false)} />
       <div className={`hero-cta${mode === 'data' ? ' hero-cta--data' : ''}`}>
-        <h1>Le nuancier des fleurs<br />suisses.</h1>
-        <p>La Suisse abrite plus de 3'000 espèces de plantes à fleurs, chacune avec sa couleur propre façonnée par son altitude et sa saison. Des prairies de plaine aux éboulis d'altitude, du premier crocus printanier aux dernières gentianes d'automne, la palette change à chaque mètre et à chaque semaine.</p>
+        <h1>Thalie — Le nuancier<br />des fleurs suisses.</h1>
+        <p>La Suisse abrite plus de 3'000 espèces de plantes à fleurs, chacune avec sa couleur propre. De la ville aux montagnes, du premier crocus aux dernières gentianes d'automne, la palette change à chaque mètre et à chaque mois.</p>
+        <p>Projet réalisé par <b>Teicir Bouazizi</b> et <b>Loann Juillerat</b>.</p>
         <button onClick={onCTAClick}>Commencer à explorer</button>
         <button onClick={() => setIsLibraryOpen(true)}>Voir toutes les fleurs</button>
       </div>

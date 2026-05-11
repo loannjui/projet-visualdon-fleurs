@@ -59,6 +59,31 @@ h2 {
   opacity: 0;
 }
 
+.axis-label {
+  position: absolute;
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.axis-label--y {
+  left: 28px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center center;
+}
+
+.axis-label--x {
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text-primary);
+}
+
 .color-square {
   width: calc(100vw / 36);
   height: calc(100vw / 36);
@@ -839,7 +864,7 @@ input[type="range"]::-moz-range-thumb {
   z-index: 100;
   padding: 0.55rem 1.1rem;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
-  border-radius: 10px;
+  border-radius: 999px;
   bottom: 28px;
   right: 28px;
   z-index: 200;
@@ -847,8 +872,10 @@ input[type="range"]::-moz-range-thumb {
   font-family: var(--font-body);
   font-size: 0.75rem;
   color: var(--bg-hero);
-  pointer-events: none;
   background-color: var(--bg-panel);
+  a {
+    color: var(--text-primary);
+  }
 }
 
 .explorer-section ~ .credits {
