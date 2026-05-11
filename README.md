@@ -1,4 +1,4 @@
-# Le nuancier des fleurs suisses
+# Thalie — Le nuancier des fleurs suisses
 
 ## Description
 
