@@ -1,17 +1,16 @@
 # Thalie — Le nuancier des fleurs suisses
 
+## But
+
+Ce projet est un projet exploratoire permettant de découvrir la biodiversité suisse à travers les couleurs. Les fleurs changent selon l’altitude et le moment de l’année. Notre but principal était traduire les données en paysage visuel et de transformer des données scientifiques en une expérience immersive.
+
 ## Description
 
-Visualisation scrollytelling de la flore suisse organisée par altitude et par mois de floraison. Le site se compose de deux vues : un écran d'accueil avec une grille de couleurs (mode aléatoire ou organisée par altitude et mois), et une section d'exploration interactive avec trois paysages SVG illustrés (montagne, plaine, ville). En faisant défiler la page, l'altitude change progressivement et les formes du paysage se colorent avec les teintes des espèces qui fleurissent à ce niveau. Un filtre par mois permet d'affiner la sélection. Cliquer sur une forme ou sur une couleur dominante ouvre une fiche détaillée de la fleur correspondante.
-La page d'accueil contient également une librairie regroupant toutes les fleurs présentes sur le site, permettant aux utilisateurs d’explorer l’ensemble des espèces indépendamment des filtres utilisés dans la partie explorative. 
+Ce site est une visualisation en scrollytelling de la flore suisse organisée par altitude et par mois de floraison. Le site se compose de deux vues : un écran d'accueil avec une grille de couleurs (mode aléatoire ou organisée par altitude et mois) et une section d'exploration interactive avec trois paysages SVG illustrés (montagne, plaine, ville). En faisant défiler la page, l'altitude change progressivement et les formes du paysage se colorent avec les teintes des espèces qui fleurissent à ce niveau. Un filtre par mois permet d'affiner la sélection et de découvrir les différences florales entre les saisons. Cliquer sur une forme ou sur une couleur dominante ouvre une fiche détaillée de la fleur correspondante. La page d'accueil contient également une librairie regroupant toutes les fleurs présentes sur le site, permettant aux utilisateurs d’explorer l’ensemble des espèces indépendamment des filtres utilisés dans la partie explorative. 
 
 ## Contexte
 
 Les données des espèces de fleurs proviennent d'Info Flora via GBIF (téléchargement d'occurrences filtrées sur la Suisse). Les altitudes minimum et maximum ont été calculées grâce aux longitudes et latitudes des espèces de GBIF et l'aide de l'API de SwissTopo. Les images sont libres de droit et récupérées depuis Wikimedia Commons et iNaturalist. Les couleurs et floraisons viennent de Wikidata et vérifiées à la main. Claude a été utilisé pour la rédaction des descriptions et "fun facts", puis vérifiées à la main.
-
-## But
-
-Ce projet est un projet exploratoire permettant de découvrir la biodiversité suisse à travers la couleur. Les fleurs changent selon l’altitude et le moment de l’année. Notre but principal était traduire les données en paysage visuel et de transformer des données scientifiques en expérience immersive.
 
 ## Planches et prototype
 
