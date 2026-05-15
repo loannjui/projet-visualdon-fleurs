@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { createPortal } from 'react-dom'
 import { MOIS_COURTS } from '../data/fleurs'
 import { thumbUrl } from '../utils/imageUrl'
 
@@ -62,7 +63,7 @@ function FlowerModal({ flowers, onClose }) {
   const locations = parseLocalisation(flower.localisation)
   const total = flowers.length
 
-  return (
+  return createPortal(
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal-card" ref={cardRef} onClick={e => e.stopPropagation()}>
 
@@ -163,7 +164,8 @@ function FlowerModal({ flowers, onClose }) {
 
         <button className="modal-close" onClick={onClose} aria-label="Fermer">✕</button>
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }
 

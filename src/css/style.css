@@ -671,7 +671,9 @@ input[type="range"]::-moz-range-thumb {
   max-width: 580px;
   width: 92%;
   max-height: 88vh;
-  overflow-y: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   position: relative;
   animation: slideUp 0.25s ease;
 }
@@ -683,7 +685,6 @@ input[type="range"]::-moz-range-thumb {
   align-items: stretch;
   background: var(--active-color, #e8ddd4);
   border-radius: 10px 10px 0 0;
-  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
   gap: 0;
   transition: background 0.3s ease;
 }
@@ -691,10 +692,10 @@ input[type="range"]::-moz-range-thumb {
 .modal-nav-btn {
   background: none;
   border: none;
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  padding: 0 12px;
+  padding: 20px 12px 0;
   line-height: 1;
   transition: color 0.15s;
   flex-shrink: 0;
@@ -723,8 +724,8 @@ input[type="range"]::-moz-range-thumb {
 .modal-tab {
   background: none;
   border: none;
-  border-bottom: 2px solid transparent;
-  padding: 16px 20px;
+  border-bottom: 3px solid transparent;
+  padding: 40px 28px 16px;
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 400;
@@ -750,6 +751,8 @@ input[type="range"]::-moz-range-thumb {
 
 .modal-body {
   padding: 24px 28px 28px;
+  overflow-y: auto;
+  flex: 1;
 }
 
 .modal-top {
@@ -837,8 +840,8 @@ input[type="range"]::-moz-range-thumb {
 
 .modal-close {
   position: absolute;
-  top: 14px;
-  right: 16px;
+  top: 8px;
+  right: 8px;
   background: rgba(0, 0, 0, 0.07);
   border: none;
   border-radius: 50%;
@@ -880,6 +883,174 @@ input[type="range"]::-moz-range-thumb {
 
 .explorer-section ~ .credits {
   color: var(--text-secondary);
+}
+
+/* ─── MOBILE LANDSCAPE ────────────────────────────────────────── */
+
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  /* Hero */
+  .hero-cta {
+    padding: 1.2rem 1.5rem;
+    width: clamp(250px, 55vw, 600px);
+  }
+  .hero-cta h1 {
+    font-size: clamp(1.1rem, 3.5vw, 2.5rem);
+    margin-bottom: 0.6rem;
+  }
+  .hero-cta p {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .hero-cta button {
+    padding: 8px 1rem 9px;
+    font-size: 0.7rem;
+  }
+
+  /* Positionnement des panels */
+  .panel-dominant {
+    top: 10px;
+    left: 10px;
+    padding: 8px 12px 10px;
+    min-width: 0;
+  }
+  .panel-altitude {
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px 10px;
+  }
+  .panel-saison {
+    bottom: 10px;
+    left: 10px;
+    padding: 8px 12px 10px;
+    min-width: 0;
+  }
+
+  /* Titres et labels */
+  .panel-title {
+    font-size: 1rem !important;
+  }
+  .panel-label-small {
+    font-size: 0.6rem;
+  }
+  .saison-month {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  .slider-ticks {
+    font-size: 0.65rem;
+  }
+
+  /* Slider altitude */
+  .altitude-track-area,
+  .altitude-range {
+    height: 90px;
+  }
+  .altitude-current-label,
+  .altitude-corner,
+  .altitude-min-label {
+    font-size: 0.65rem;
+  }
+  .altitude-dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  /* Swatches dominantes */
+  .dominant-swatches {
+    gap: 5px;
+    padding: 5px 5px 7px;
+    width: auto;
+    max-width: calc(100vw - 24px);
+  }
+  .dominant-swatch {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Nuancier central */
+  .swatch-grid {
+    top: 80px;
+  }
+  .swatch {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* Boutons overlay */
+  .grid-mode-toggle,
+  .home-btn {
+    top: 10px;
+    right: 10px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.65rem;
+  }
+  .home-btn {
+    top: auto;
+    bottom: 44px;
+  }
+
+  /* Crédits */
+  .credits {
+    bottom: 10px;
+    right: 10px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.65rem;
+  }
+}
+
+/* ─── PORTRAIT OVERLAY (mobile uniquement) ────────────────────── */
+
+.portrait-overlay {
+  display: none;
+}
+
+@media (orientation: portrait) and (hover: none) and (pointer: coarse) {
+  .portrait-overlay {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: var(--bg-hero);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .portrait-overlay__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+  }
+
+  .portrait-overlay__icon {
+    font-size: 3.5rem;
+    line-height: 1;
+    animation: portraitRotate 2s ease-in-out infinite;
+  }
+
+  .portrait-overlay__title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .portrait-overlay__sub {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    max-width: 260px;
+    line-height: 1.5;
+  }
+}
+
+@keyframes portraitRotate {
+  0%, 100% { transform: rotate(0deg); }
+  40%       { transform: rotate(90deg); }
+  60%       { transform: rotate(90deg); }
 }
 
 @keyframes pageIn {
